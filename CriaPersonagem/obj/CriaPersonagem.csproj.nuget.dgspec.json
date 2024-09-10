@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\repositorio_git\\LojaJogoChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {}
+    "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\repositorio_git\\LojaJogoChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {
+    "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\repositorio_git\\LojaJogoChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
         "projectName": "CriaPersonagem",
-        "projectPath": "C:\\Users\\user\\Documents\\repositorio_git\\LojaJogoChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\repositorio_git\\LojaJogoChagas\\ProvaChagas\\CriaPersonagem\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas\\CriaPersonagem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
