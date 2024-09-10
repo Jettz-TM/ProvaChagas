@@ -1,0 +1,15 @@
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\CriaPersonagem.exe
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\CriaPersonagem.deps.json
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\CriaPersonagem.runtimeconfig.json
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\CriaPersonagem.dll
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\CriaPersonagem.pdb
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.AssemblyInfoInputs.cache
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.AssemblyInfo.cs
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.csproj.CoreCompileInputs.cache
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.dll
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\refint\CriaPersonagem.dll
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.pdb
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.genruntimeconfig.cache
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\ref\CriaPersonagem.dll
+C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.sourcelink.json
