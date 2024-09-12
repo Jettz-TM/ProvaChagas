@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 namespace Jogo{
     class Program
     {
@@ -7,7 +8,7 @@ namespace Jogo{
         static void Main(string[] args)
         {
             //TODO: quando terminar as salas, organizar com o roteiro e colocar os diálogos
-
+            // TODO: Fazer os arquivos separados de cada função, para fins de organização
             CriacaoPersonagem(); //*leva pra criação de personagem (nome, classe e atributos)
             CombateGPT(); //*combate contra o chatpgt, no final do jogo
             Combate1(); //*combate contra um inimígo genérico (pontos de vida e ataques provisórios)
