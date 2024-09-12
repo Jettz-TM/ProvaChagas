@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {}
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+        "projectUniqueName": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
         "projectName": "CriaPersonagem",
-        "projectPath": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
-        "packagesPath": "C:\\Users\\Jo�oWagnerLudembergd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\obj\\",
+        "projectPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
+        "packagesPath": "C:\\Users\\manin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jo�oWagnerLudembergd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\manin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
