@@ -409,7 +409,7 @@ namespace Jogo{
                     menu = true;
                     while (menu == true)
                     {
-                        System.Console.WriteLine("1 - Chute de bola (10 de dano)\n2 - Jogar EV3 (5 de dano)\n3 - Sair ");
+                        System.Console.WriteLine("1 - Chute de bola (15 de dano)\n2 - Jogar EV3 (5 de dano)\n3 - Sair ");
                         int.TryParse(Console.ReadLine(), out escolhaluta);
                         if (escolhaluta == 1)
                         {
