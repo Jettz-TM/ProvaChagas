@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CriaPersonagem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12a6429f73cab341804f97dab547dc092989f75e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29532380d4cba3e1c30c1fb2e1655b94cc895a3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CriaPersonagem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CriaPersonagem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
