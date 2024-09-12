@@ -18,9 +18,7 @@ namespace Jogo{
         }
         public static void ChangeInv(string?[,] matrizinv){
             int coluna, linha;
-            string? resp;
             string item = "Poção";
-            bool sob = false;
             while(true){
                 ShowInv(matrizinv); // * Mostra o inventario
 
