@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\xchar\\.nuget\\packages\\": {}
+    "C:\\Users\\Jo�oWagnerLudembergd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+      "projectUniqueName": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
       "projectName": "CriaPersonagem",
-      "projectPath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
-      "packagesPath": "C:\\Users\\xchar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\CriaPersonagem\\obj\\",
+      "projectPath": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+      "packagesPath": "C:\\Users\\Jo�oWagnerLudembergd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jo�oWagnerLudembergd\\Documents\\Wagnero\\ProvaChagas\\ProvaChagas\\CriaPersonagem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\xchar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jo�oWagnerLudembergd\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
