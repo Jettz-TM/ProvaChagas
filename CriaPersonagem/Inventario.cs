@@ -1,4 +1,5 @@
 using System;
+using System.Media;
 namespace Jogo{
     class Inventario{
         public static void ShowInv(string?[,] matrizinv){
