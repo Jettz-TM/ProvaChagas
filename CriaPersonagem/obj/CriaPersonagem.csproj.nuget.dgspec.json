@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {}
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+        "projectUniqueName": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
         "projectName": "CriaPersonagem",
-        "projectPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+        "projectPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
         "packagesPath": "C:\\Users\\manin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\obj\\",
+        "outputPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manin\\AppData\\Roaming\\NuGet\\NuGet.Config"
