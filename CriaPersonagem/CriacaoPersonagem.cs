@@ -4,7 +4,7 @@ namespace Jogo
 {
     class CriacaoPersonagem
     {
-        public static int vida = 50, mana = 25, forca = 0, resist = 0, intel = 0, classe = 0;
+        public static int vidaTotal = 50, mana = 25, forca = 0, resist = 0, intel = 0, classe = 0, vida = 0;
         public static string? nome;
         public static void Personagem()
         {
@@ -61,7 +61,12 @@ namespace Jogo
                 {
                     Console.Clear();
 
-                    Console.Write($"Você tem {pontos} pontos para distribuir entre:\n\n1- Força ({forca} Pontos atuais)\n2- Resistência ({resist} Pontos atuais)\n3- Inteligência ({intel} Pontos atuais)\n\nEscolha: ");
+                    Console.WriteLine($"Você tem {pontos} pontos para distribuir entre:");
+                    Console.WriteLine("   (Pontos aumentam os seus atributos)");
+                    Console.WriteLine($"\n1- Força (Aumenta o dano)\n   Quantidade de pontos no atributo: {forca}");
+                    Console.WriteLine($"\n2- Resistência (Aumenta a vidaTotal)\n   Quantidade de pontos no atributo: {resist}");
+                    Console.WriteLine($"\n3- Inteligência (Aumenta a mana)\n   Quantidade de pontos no atributo: {intel}");
+                    Console.Write("\nEscolha: ");
                     int.TryParse(Console.ReadLine(), out escolha);
 
                     switch (escolha)
@@ -70,7 +75,7 @@ namespace Jogo
                             forca++; //* aumenta o dano
                             break;
                         case 2:
-                            resist++; //* aumenta a vida
+                            resist++; //* aumenta a vidaTotal
                             break;
                         case 3:
                             intel++; //* aumenta a mana
@@ -80,7 +85,8 @@ namespace Jogo
                 pontos--;
             } while (pontos > 0);
 
-            vida += 5 * resist;
+            vidaTotal += 5 * resist;
+            vida = vidaTotal;
             mana += 5 * intel;
             Console.Clear();
             player.Stop();

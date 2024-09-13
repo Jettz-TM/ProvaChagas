@@ -4,8 +4,12 @@ namespace Jogo
 {
     class Combates //Classe pra ter os combates guardados (por enquanto só do gpt e do inimigo generico)
     {
+        public static int morreu, mortes = 0;
         public static void ChatGPT()
         {
+            morreu = 0;
+            CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
+
             string Som = Path.Combine(Program.diretorio, "assets", "caos.wav");
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(Som);
             player.PlayLooping();
@@ -21,7 +25,7 @@ namespace Jogo
 
                 Console.Clear();
 
-                Console.WriteLine($"Vida: {CriacaoPersonagem.vida}\nVida ChatGPT: {vidaGPT}");
+                Console.WriteLine($"Vida: {CriacaoPersonagem.vida}\nVida do ChatGPT: {vidaGPT}");
 
                 switch (acaogpt)
                 {
@@ -269,10 +273,39 @@ namespace Jogo
             }
             player.Stop();
             Console.Clear();
-            if(CriacaoPersonagem.vida <= 0) {
-                Console.WriteLine("Chat GPT: Evidencia-se uma notável carência de habilidade em suas ações\nChagas: Skill Issue.");
+            if (CriacaoPersonagem.vida <= 0)
+            {
+                Console.WriteLine("Parabéns, você morreu.");
+                Console.ReadKey();
+                Console.WriteLine("\nChat GPT: Evidencia-se uma notável carência de habilidade em suas ações");
+                Console.ReadKey();
+                Console.WriteLine("Chagas: Skill Issue");
+                Console.ReadKey();
+                while (true)
+                {
+                    Console.Clear();
+                    Console.WriteLine("\nDeseja voltar do início?");
+                    Console.Write("\n1- Sim   2- Não\n\nEscolha: ");
+                    if (!int.TryParse(Console.ReadLine(), out morreu) || morreu < 1 || morreu > 2)
+                    {
+                        Console.WriteLine("Digite uma opção válida");
+                        Console.ReadKey();
+                    }
+                    else
+                    {
+                        if (morreu == 1)
+                        {
+                            ChatGPT();
+                        }
+                        else if (morreu == 2)
+                        {
+                            Environment.Exit(0);
+                        }
+                    }
+                }
             }
-            else {
+            else
+            {
                 Console.WriteLine("Chagas: O Chat GPT perdeu, esse paia!\n*Chagas sai com raiva*");
             }
             Console.ReadKey();
@@ -284,11 +317,11 @@ namespace Jogo
             string gen1 = Path.Combine(Program.diretorio, "assets", "generico.wav");
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
-            CriacaoPersonagem.vida = 50 + 5 * CriacaoPersonagem.resist;
-            int VidaInimigo = 50, ataqueinimigo, danoPlayer;
+            CriacaoPersonagem.vidaTotal = 50 + 5 * CriacaoPersonagem.resist;
+            int vidaTotalInimigo = 50, ataqueinimigo, danoPlayer;
             Random random = new Random();
 
-            while (CriacaoPersonagem.vida > 0 && VidaInimigo > 0)
+            while (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo > 0)
             {
                 ataqueinimigo = random.Next(1, 19);
 
@@ -296,7 +329,7 @@ namespace Jogo
 
                 int escolha, escolhaluta;
                 System.Console.WriteLine("--- Turno do jogador ---");
-                System.Console.WriteLine($"Vida: {CriacaoPersonagem.vida} | Mana: {CriacaoPersonagem.mana}\n Vida do inimigo: {VidaInimigo}");
+                System.Console.WriteLine($"vidaTotal: {CriacaoPersonagem.vidaTotal} | Mana: {CriacaoPersonagem.mana}\n vidaTotal do inimigo: {vidaTotalInimigo}");
                 System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
                 int.TryParse(Console.ReadLine(), out escolha);
 
@@ -311,7 +344,7 @@ namespace Jogo
                         if (escolhaluta == 1)
                         {
                             danoPlayer = random.Next(1, 11);
-                            VidaInimigo -= danoPlayer + CriacaoPersonagem.forca;
+                            vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                             System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
                             menu = false;
                         }
@@ -338,7 +371,7 @@ namespace Jogo
                                     {
                                         CriacaoPersonagem.mana -= 15;
                                         danoPlayer = random.Next(5, 21);
-                                        VidaInimigo -= danoPlayer + CriacaoPersonagem.forca;
+                                        vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
                                         menu = false;
                                     }
@@ -368,7 +401,7 @@ namespace Jogo
                                     {
                                         CriacaoPersonagem.mana -= 15;
                                         danoPlayer = random.Next(5, 21);
-                                        VidaInimigo -= danoPlayer + CriacaoPersonagem.forca;
+                                        vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
                                         menu = false;
                                     }
@@ -398,7 +431,7 @@ namespace Jogo
                                     {
                                         CriacaoPersonagem.mana -= 15;
                                         danoPlayer = random.Next(5, 21);
-                                        VidaInimigo -= danoPlayer + CriacaoPersonagem.forca;
+                                        vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
                                         menu = false;
                                     }
@@ -423,14 +456,14 @@ namespace Jogo
 
                     }
                 }
-                if (VidaInimigo > 0)
+                if (vidaTotalInimigo > 0)
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
                     int escolhainimigo = random.Next(0, 2);
 
                     if (escolhainimigo == 0)
                     {
-                        CriacaoPersonagem.vida -= ataqueinimigo;
+                        CriacaoPersonagem.vidaTotal -= ataqueinimigo;
                         System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo} de dano!");
                     }
                     else
@@ -439,7 +472,7 @@ namespace Jogo
                     }
                 }
             }
-            if (CriacaoPersonagem.vida > 0 && VidaInimigo <= 0)
+            if (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo <= 0)
             {
                 Console.Clear();
                 System.Console.WriteLine($"Você ganhou o combate {Program.nome}!");
