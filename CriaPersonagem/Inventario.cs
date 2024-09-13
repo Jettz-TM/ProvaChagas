@@ -8,38 +8,37 @@ namespace Jogo{
 
                 for (int j = 0; j < matrizinv.GetLength(1); j++){ // * Linha
                     if (matrizinv[i,j] == null){ // * Caso o inventario esteja vazio (ou nulo) ele escreve "---"
-                        Console.Write("---" + " ");
+                        Console.Write("---" + "\n");
                     }
                     else{
-                        Console.Write(matrizinv[i, j] + " ");
+                        Console.Write(matrizinv[i, j] + "\n");
                     }
                 }
-                Console.WriteLine(); // Pula para a próxima linha após cada linha da matriz
             }
         }
-        public static void ChangeInv(string?[,] matrizinv){
-            int coluna, linha;
-            string item = "Poção";
+        public static void ChangeInv(string?[,] matrizinv, string item){
+            int coluna = 0, linha;
             while(true){
                 ShowInv(matrizinv); // * Mostra o inventario
 
-                System.Console.WriteLine("Digite o numero da Coluna onde deseja adicionar seu item");
-                int.TryParse(Console.ReadLine(), out coluna); // * Acesso da coluna
-
-                Console.Clear();
-                ShowInv(matrizinv);
-
                 System.Console.WriteLine("Digite o numero da Linha onde deseja adicionar seu item");
-                int.TryParse(Console.ReadLine(), out linha); // * Acesso da linha
+                 // * Acesso da Linha
 
-                if(matrizinv[coluna,linha] != null){
+                if(!int.TryParse(Console.ReadLine(), out linha) || linha-1 > 8 || linha -1 < 0){
+                    Console.Clear();
+                    System.Console.WriteLine("Escolha um slot valido");
+                }
+                else if(matrizinv[linha -1, coluna] != null){
+                    Console.Clear();
                     System.Console.WriteLine("Ja existe algo nesse slot, favor escolher outro slot");
                 }
                 else{
-                    matrizinv[coluna,linha] = item;
+                    Console.Clear();
+                    matrizinv[linha -1, coluna] = item;
                     break;
-                }
+                }   
             }
+            Console.Clear();
         }
     }
 }

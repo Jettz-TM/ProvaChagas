@@ -4,17 +4,24 @@ using System.Media;
 namespace Jogo{
     class Program
     {
-        public static int vida = 50, mana = 25, forca = 0, resist = 0, intel = 0;
         public static string diretorio = Directory.GetCurrentDirectory(); // * Obtém o diretório onde o executável está localizado
         // * pra usar o sons, usar esse comando pra formar o caminho string Som = Path.Combine(diretorio, "assets", "aaa.wav");
-        public static string?[,] matrizinv = new string?[3 , 3]{
-            {null , null , null},
-            {null , null , null},
-            {null , null , null}};
+        public static string?[,] matrizinv = new string?[9 , 1]{
+            {null},
+            {null},
+            {null},
+            {null},
+            {null},
+            {null},
+            {null},
+            {null},
+            {null},};
         public static string? nome;
         static void Main(string[] args)
         {
-            //TODO: quando terminar as salas, organizar com o roteiro e colocar os diálogos
+            string Som = Path.Combine(Program.diretorio, "assets", "introechegada.wav");
+            System.Media.SoundPlayer introechegada = new System.Media.SoundPlayer (Som);
+            // TODO: quando terminar as salas, organizar com o roteiro e colocar os diálogos
             // TODO: Fazer os arquivos separados de cada função, para fins de organização
             /*
             ! Instruções para criar um arquivo.cs, para agregar no jogo
@@ -36,9 +43,16 @@ namespace Jogo{
             // ! Para chamar qualquer coisa dos outros arquivos.cs, por o nome da classe junto do nome da variavel/função
             
             CriacaoPersonagem.Personagem(); //*leva pra criação de personagem (nome, classe e atributos)
-            Combates.ChatGPT(); //*combate contra o chatpgt, no final do jogo
-            Combates.InimigoGenerico(); //*combate contra um inimígo genérico (pontos de vida e ataques provisórios)
-            Loja.Tonhao(); //*Loja do tonhão (moedas e itens a venda provisórios)
+             //*combate contra um inimígo genérico (pontos de vida e ataques provisórios)
+            introechegada.PlayLooping();
+            Salas.Introdução();
+            Salas.Sala1();
+            introechegada.Stop();
+            Salas.Sala2();
+            System.Console.WriteLine("Work in Progress :)");
+            Console.ReadKey();
+            //Combates.ChatGPT(); //*combate contra o chatpgt, no final do jogo
+            //Loja.Tonhao(); //*Loja do tonhão (moedas e itens a venda provisórios)
         }
 
     }

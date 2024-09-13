@@ -8,23 +8,57 @@ namespace Jogo
         {
             //Console.WriteLine("");
             Console.WriteLine("Fortaleza, CE\n");
+            Console.ReadKey();
             Console.WriteLine("Segunda feira, as 3:33 da manhã você recebe uma mensagem do professor Jardel");
+            Console.ReadKey();
             Console.WriteLine($"Jardel:{Program.nome} preciso de sua ajuda! O professor Chagas enloqueceu!");
+            Console.ReadKey();
             Console.WriteLine("Chagas transformou os alunos em algum tipo de coisa mostruosa através do Chat GPT.");
+            Console.ReadKey();
             Console.WriteLine("Preciso de sua ajuda imediatamente, venha rapido até o senai, estou na sala J2");
             Console.ReadKey();
+            System.Console.WriteLine("*Você se prepara e sai para ajudar o Jardel com essa situação*");
+            Console.ReadKey();
+            Console.Clear();
         }
         public static void Sala1()
         {
-            Console.WriteLine("Jardel:Finalmente voce chegou!");
-            Console.WriteLine("Jardel:Agora nos resta enfrentar o Chagas e os alunos");
-            Console.WriteLine($"{Program.nome} pegue este soco inglês e enfrente quem estiver no caminho");
-            Console.WriteLine("Lembre-se que pode haver lojinhas espalhadas pelo colegio");
+            string item = "Soco Inglês";
+            Console.WriteLine("*Você chega no Senai, e uma situação critica, tudo parece corrompido e estranho*");
+            Console.ReadKey();
+            Console.WriteLine("*Nada parece fazer sentido, mas sem raciocinar muito, voce chega na sala do jardel*");
+            Console.ReadKey();
+            Console.WriteLine("Jardel: Finalmente voce chegou!");
+            Console.ReadKey();
+            Console.WriteLine("Jardel: Agora nos resta enfrentar o Chagas e os alunos");
+            Console.ReadKey();
+            Console.WriteLine($"Jardel: {CriacaoPersonagem.nome} pegue este soco inglês e enfrente quem estiver no caminho");
+            Console.ReadKey();
+            Console.Clear();
+            Inventario.ChangeInv(Program.matrizinv, item);
+            Inventario.ShowInv(Program.matrizinv);
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("\nJardel: Lembre-se que pode haver lojinhas espalhadas pelo colegio");
+            Console.ReadKey();
+            System.Console.WriteLine("*Você sai da sala do Jardel*");
+            Console.ReadKey();
         }
         public static void Sala2()
         {
+            string Som = Path.Combine(Program.diretorio, "assets", "infectados.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Som);
+            player.PlayLooping();
+            Console.Clear();
             Console.WriteLine("Aluno transformado: V0c3 s0 p455ará s3 m3us c0dig05 corromperem!");
-            //Colocar o sistema de batalha 1 + passar de fase
+            Console.ReadKey();
+            Console.WriteLine($"{CriacaoPersonagem.nome}: O professor acabou de me avisar sobre a infecção... como isso se agravou tanto?");
+            Console.ReadKey();
+            System.Console.WriteLine("Aluno transformado: 01110011\n01100101\n00100000\n01101101\n01100001\n01110100\n01100001");
+            ////tradução: se mata
+            Console.ReadKey();
+            player.Stop();
+            Console.Clear();
         }
         public static void Sala3()
         {
@@ -61,6 +95,7 @@ namespace Jogo
             Console.WriteLine("Chagas:Agora que eu descobri o poder que o Chat GPT tem, você não tem como me vencer!");
             Console.WriteLine("Chagas:Sinta o poder do Chat GPT");
             Console.ReadKey();
+            //to tipo o chico buarque quando n deixaram eu coolocar pro chagas dizer "puta, biscate" e "gigolo"
         }
         public static void Sala5()
         {
