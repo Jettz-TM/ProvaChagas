@@ -6,6 +6,9 @@ namespace Jogo
     {
         public static void ChatGPT()
         {
+            string Som = Path.Combine(Program.diretorio, "assets", "caos.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer (Som);
+            player.PlayLooping();
             int vidaGPT = 120, dano, acaogpt, escolha, resposta;
             //* dano provisório (por enquanto aumenta com a força, mudar depois)
 
@@ -264,12 +267,17 @@ namespace Jogo
                         break;
                 }
             }
+            player.Stop();
             Console.Clear();
             Console.Write($"Parabéns {CriacaoPersonagem.nome}!! Você ganhou do Chat GPT");
         }
 
         public static void InimigoGenerico()
         {
+            string Som = Path.Combine(Program.diretorio, "assets", "generico.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer (Som);
+            player.PlayLooping();
+
             int resist = 0, vidajogador = (50 + 5 * resist), DanoArma = 0, VidaInimigo = 50, manajogador = 50, ataqueinimigo = 15;
             Random random = new Random();
 
@@ -362,6 +370,7 @@ namespace Jogo
                         System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
                     }
                 }
+            player.Stop();
             }
             if (vidajogador > 0)
             {

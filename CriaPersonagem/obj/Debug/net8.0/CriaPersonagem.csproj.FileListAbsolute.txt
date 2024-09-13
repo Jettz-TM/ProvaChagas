@@ -39,3 +39,8 @@ C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\Cria
 C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPers.155D52F4.Up2Date
 C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\CriaPersonagem\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\build\CriaPersonagem.exe
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\build\CriaPersonagem.deps.json
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\build\CriaPersonagem.runtimeconfig.json
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\build\CriaPersonagem.dll
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\build\CriaPersonagem.pdb

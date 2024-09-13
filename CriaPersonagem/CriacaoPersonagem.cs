@@ -8,6 +8,11 @@ namespace Jogo
         public static string? nome;
         public static void Personagem()
         {
+            string Som = Path.Combine(Program.diretorio, "assets", "criando.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer (Som);
+            player.PlayLooping();
+            
+            
             int escolha = 0, pontos = 5;
 
             Console.Write("Digite o nome do seu personagem: ");
@@ -69,6 +74,7 @@ namespace Jogo
 
             vida += 5 * resist;
             mana += 5 * intel;
+            player.Stop();
         }
 
     }
