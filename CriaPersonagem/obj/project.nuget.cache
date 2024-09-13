@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Hiw4yQ6i41E=",
+  "dgSpecHash": "GdQ3G6qQ0fI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\CriaPersonagem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\xchar\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

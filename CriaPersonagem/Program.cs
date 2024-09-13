@@ -49,6 +49,7 @@ namespace Jogo{
             Salas.Sala1();
             introechegada.Stop();
             Salas.Sala2();
+            Combates.InimigoGenerico();
             System.Console.WriteLine("Work in Progress :)");
             Console.ReadKey();
             //Combates.ChatGPT(); //*combate contra o chatpgt, no final do jogo
