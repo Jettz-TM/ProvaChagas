@@ -106,18 +106,21 @@ namespace Jogo
             {
                 ataqueinimigo = random.Next(1, 19);
 
-                bool menu = false;
+                int menu = 0;
 
-                int escolha, escolhaluta;
-                System.Console.WriteLine("--- Turno do jogador ---");
-                System.Console.WriteLine($"vidaTotal: {CriacaoPersonagem.vidaTotal} | Mana: {CriacaoPersonagem.mana}\n vidaTotal do inimigo: {vidaTotalInimigo}");
-                System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
-                int.TryParse(Console.ReadLine(), out escolha);
+                int escolha = 0, escolhaluta;
+                if (menu == 0)
+                {
+                    System.Console.WriteLine("--- Turno do jogador ---");
+                    System.Console.WriteLine($"Vida: {CriacaoPersonagem.vida} | Mana: {CriacaoPersonagem.mana}\n Vida do inimigo: {vidaTotalInimigo}");
+                    System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
+                }
+
 
                 if (escolha == 1)
                 {
-                    menu = true;
-                    while (menu == true)
+                    menu = 1;
+                    while (menu == 1)
                     {
                         Console.Clear();
                         System.Console.WriteLine("1 - Murro\n2 - Sair ");
@@ -127,18 +130,18 @@ namespace Jogo
                             danoPlayer = random.Next(1, 11);
                             vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                             System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                            menu = false;
+                            menu = 4;
                         }
                         else if (escolhaluta == 2)
                         {
-                            menu = false;
+                            menu = 0;
                         }
                     }
                 }
                 else if (escolha == 2)
                 {
-                    menu = true;
-                    while (menu == true)
+                    menu = 2;
+                    while (menu == 2)
                     {
                         Console.Clear();
                         switch (CriacaoPersonagem.classe)
@@ -154,23 +157,22 @@ namespace Jogo
                                         danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                                        menu = false;
+                                        menu = 0;
                                     }
                                     else
                                     {
                                         System.Console.WriteLine("MANA INSUFICIENTE!");
-                                        menu = false;
+                                        menu = 0;
                                     }
                                 }
                                 else if (escolhaluta == 2)
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você joga um robô entre você e o inimígo e evita o dano nesse turno");
-                                    menu = false;
                                 }
                                 else if (escolhaluta == 3)
                                 {
-                                    menu = false;
+                                    menu = 0;
                                 }
                                 break;
                             case 2:
@@ -184,23 +186,21 @@ namespace Jogo
                                         danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                                        menu = false;
                                     }
                                     else
                                     {
                                         System.Console.WriteLine("MANA INSUFICIENTE!");
-                                        menu = false;
+                                        menu = 0;
                                     }
                                 }
                                 else if (escolhaluta == 2)
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você cobra falta e muda a direção do ataque pro lado");
-                                    menu = false;
                                 }
                                 else if (escolhaluta == 3)
                                 {
-                                    menu = false;
+                                    menu = 0;
                                 }
                                 break;
                             case 3:
@@ -214,30 +214,28 @@ namespace Jogo
                                         danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                                        menu = false;
                                     }
                                     else
                                     {
                                         System.Console.WriteLine("MANA INSUFICIENTE!");
-                                        menu = false;
+                                        menu = 0;
                                     }
                                 }
                                 else if (escolhaluta == 2)
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você rouba o elixir do inimigo e ele não consegue atacar nesse turno");
-                                    menu = false;
                                 }
                                 else if (escolhaluta == 3)
                                 {
-                                    menu = false;
+                                    menu = 0;
                                 }
                                 break;
                         }
 
                     }
                 }
-                if (vidaTotalInimigo > 0)
+
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
                     int escolhainimigo = random.Next(0, 2);
@@ -256,8 +254,11 @@ namespace Jogo
             if (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo <= 0)
             {
                 Console.Clear();
-                System.Console.WriteLine($"Você ganhou o combate {Program.nome}!");
-                gen.Stop();
+                if (vidaTotalInimigo > 0)
+                {
+                    System.Console.WriteLine($"Você ganhou o combate {Program.nome}!");
+                    gen.Stop();
+                }
             }
             else
             {

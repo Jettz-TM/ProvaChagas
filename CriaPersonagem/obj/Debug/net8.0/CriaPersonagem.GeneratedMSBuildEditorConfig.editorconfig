@@ -8,6 +8,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CriaPersonagem
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\manin\OneDrive\Documentos\VSCode\ProvaChagas\criapersonagem\
+=======
+build_property.ProjectDir = C:\Users\user\Documents\repositorio_git\ProvaChagas-1\CriaPersonagem\
+>>>>>>> a4510523ec63a09c341c0e89d306ebde8b48a4da
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -51,6 +51,7 @@ namespace Jogo
             Salas.Sala1();
             introechegada.Stop();
             Salas.Sala2();
+            Combates.InimigoGenerico();
             System.Console.WriteLine("Work in Progress :)");
             Console.ReadKey();
             //Loja.Tonhao(); //*Loja do tonhão (moedas e itens a venda provisórios)
