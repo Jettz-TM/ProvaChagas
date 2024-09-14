@@ -1,44 +1,25 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {}
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj": {
+    "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
+        "projectUniqueName": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
         "projectName": "CriaPersonagem",
-        "projectPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
+        "projectPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
         "packagesPath": "C:\\Users\\manin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\criapersonagem\\obj\\",
+        "outputPath": "C:\\Users\\manin\\OneDrive\\Documentos\\VSCode\\ProvaChagas\\CriaPersonagem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\manin\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\CriaPersonagem.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\CriaPersonagem.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\CriaPersonagem.csproj",
-        "projectName": "CriaPersonagem",
-        "projectPath": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\CriaPersonagem.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\repositorio_git\\ProvaChagas-1\\CriaPersonagem\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> a4510523ec63a09c341c0e89d306ebde8b48a4da
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,11 +64,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
->>>>>>> a4510523ec63a09c341c0e89d306ebde8b48a4da
         }
       }
     }

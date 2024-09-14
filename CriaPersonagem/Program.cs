@@ -44,16 +44,19 @@ namespace Jogo
             // ! Para chamar qualquer coisa dos outros arquivos.cs, por o nome da classe junto do nome da variavel/função
 
             CriacaoPersonagem.Personagem(); //*leva pra criação de personagem (nome, classe e atributos)
-                                            //*combate contra um inimígo genérico (pontos de vidaTotal e ataques provisórios)
             introechegada.PlayLooping();
-            Combates.ChatGPT(); //*combate contra o chatpgt, no final do jogo
             Salas.Introdução();
             Salas.Sala1();
             introechegada.Stop();
             Salas.Sala2();
-            Combates.InimigoGenerico();
+            Combates.InimigoGenerico(); //*combate contra um inimígo genérico (pontos de vidaTotal e ataques provisórios)
             System.Console.WriteLine("Work in Progress :)");
             Console.ReadKey();
+
+            // * combate contra o chat gpt e a loja do tonhão em comentario pq ainda não tão 100%
+            // * ou a parte em que els entram ainda não foi terminada
+
+            // Combates.ChatGPT(); //* combate contra o chatpgt, no final do jogo
             //Loja.Tonhao(); //*Loja do tonhão (moedas e itens a venda provisórios)
         }
 
