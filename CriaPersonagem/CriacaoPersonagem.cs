@@ -4,7 +4,7 @@ namespace Jogo
 {
     class CriacaoPersonagem
     {
-        public static int vidaTotal = 50, mana = 25, forca = 0, resist = 0, intel = 0, classe = 0, vida = 0;
+        public static int vidaTotal = 50, manaTotal = 25, forca = 0, resist = 0, intel = 0, classe = 0, vida = 0, mana, buffArma = 0, buffArmadura = 0;
         public static string? nome;
         public static void Personagem()
         {
@@ -15,6 +15,7 @@ namespace Jogo
 
             int escolha = 0, pontos = 5;
 
+            Console.Clear();
             Console.Write("Digite o nome do seu personagem: ");
             nome = Console.ReadLine();
 
@@ -87,7 +88,8 @@ namespace Jogo
 
             vidaTotal += 5 * resist;
             vida = vidaTotal;
-            mana += 5 * intel;
+            manaTotal += 5 * intel;
+            mana = manaTotal;
             Console.Clear();
             player.Stop();
         }

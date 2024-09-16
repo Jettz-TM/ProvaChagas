@@ -6,8 +6,7 @@ namespace Jogo
     {
         public static void Introdução()
         {
-            //Console.WriteLine("");
-            Console.WriteLine("Fortaleza, CE\n");
+            /*Console.WriteLine("Fortaleza, CE\n");
             Console.ReadKey();
             Console.WriteLine("Segunda feira, as 3:33 da manhã você recebe uma mensagem do professor Jardel");
             Console.ReadKey();
@@ -19,11 +18,14 @@ namespace Jogo
             Console.ReadKey();
             System.Console.WriteLine("*Você se prepara e sai para ajudar o Jardel com essa situação*");
             Console.ReadKey();
-            Console.Clear();
+            Console.Clear();*/
+            Combates.InimigoGenerico();
+            
         }
         public static void Sala1()
         {
             string item = "Soco Inglês";
+            CriacaoPersonagem.buffArma = 5;
             Console.WriteLine("*Você chega no Senai, e uma situação critica, tudo parece corrompido e estranho*");
             Console.ReadKey();
             Console.WriteLine("*Nada parece fazer sentido, mas sem raciocinar muito, voce chega na sala do jardel*");
@@ -67,11 +69,11 @@ namespace Jogo
 
             Console.WriteLine($"{Program.nome}:Finalmente,um ar fresco");
             Console.WriteLine($"{Program.nome}:Impossivel ter uma coisa dessas aqui!");
-            Console.WriteLine($"{Program.nome}:Uma loja do meu gradne amigo Tonhão! E um carro mal estacionado?");
+            Console.WriteLine($"{Program.nome}:Uma loja do meu gradne amigo Tonhão! E a porta da proxima sala");
             while (true)
             {
                 Console.WriteLine("Onde você gostaria de ir?");
-                Console.WriteLine("1- Loja do tonhão  2- Carro");
+                Console.WriteLine("1- Loja do tonhão  2- Proxima sala");
                 if (!int.TryParse(Console.ReadLine(), out respostaloja) || respostaloja >= 3 || respostaloja <= 0)
                 {
                     Console.Clear();
@@ -89,7 +91,7 @@ namespace Jogo
                     Loja.Tonhao();
                     break;
                 case 2:
-                    Console.WriteLine("Um carro com placa 4OO2");
+                    Console.WriteLine("*Voce passa pra proxima sala ignorando a loja*");
                     Console.ReadKey();
                     break;
             }
