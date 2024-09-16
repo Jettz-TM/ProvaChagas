@@ -8,10 +8,10 @@ namespace Jogo
         public static string diretorio = Directory.GetCurrentDirectory(); // * Obtém o diretório onde o executável está localizado
         // * pra usar o sons, usar esse comando pra formar o caminho string Som = Path.Combine(diretorio, "assets", "aaa.wav");
         public static string?[,] matrizinv = new string?[9, 1]{
-            {"Energetico"},
-            {"Soco Inglês"},
-            {"Uniforme do Interclasse"},
-            {"Salgado"},
+            {null},
+            {null},
+            {null},
+            {null},
             {null},
             {null},
             {null},

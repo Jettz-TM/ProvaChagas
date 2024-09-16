@@ -14,10 +14,10 @@ namespace Jogo
                 Energetico(Program.matrizinv);
             }
             else if(matrizinv[linha - 1, 0] == "Soco Inglês"){
-                Uniforme();
+                ItemPassivo();
             }
             else if(matrizinv[linha - 1, 0] == "Uniforme do Interclasse"){
-                Ingles();
+                ItemPassivo();
             }
             
             
@@ -65,10 +65,7 @@ namespace Jogo
                 Console.WriteLine("Tua mana tá cheia, aprendiz mais fraco do chat gpt");
             }
         }
-        public static void Uniforme(){
-            System.Console.WriteLine("Esse item ja e equipado passivamente");
-        }
-        public static void Ingles(){
+        public static void ItemPassivo(){
             System.Console.WriteLine("Esse item ja e equipado passivamente");
         }
     }

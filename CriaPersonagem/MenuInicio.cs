@@ -50,7 +50,7 @@ namespace Jogo
                             Console.WriteLine("Jardel como: Jardel");
                             Console.WriteLine("Gemini como: Chat GPT");
                             Console.WriteLine("Renê como: Reninho");
-                            Console.WriteLine("Menção Honrosa: Oto Sefarim Ribeiro \n Ele nos ajudou com metodos mais praticos para programar o jogo \n Valeu Oto <3");
+                            Console.WriteLine("Menção Honrosa: Oto Ribeiro Serafim \n Ele nos ajudou com metodos mais praticos para programar o jogo \n Valeu Oto <3");
                             Console.WriteLine("\n\nAperte qualquer coisa para sair.");
                             Console.ReadKey();
                             break;

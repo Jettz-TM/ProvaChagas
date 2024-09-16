@@ -6,7 +6,7 @@ namespace Jogo
     {
         public static void Introdução()
         {
-            /*Console.WriteLine("Fortaleza, CE\n");
+            Console.WriteLine("Fortaleza, CE\n");
             Console.ReadKey();
             Console.WriteLine("Segunda feira, as 3:33 da manhã você recebe uma mensagem do professor Jardel");
             Console.ReadKey();
@@ -18,8 +18,7 @@ namespace Jogo
             Console.ReadKey();
             System.Console.WriteLine("*Você se prepara e sai para ajudar o Jardel com essa situação*");
             Console.ReadKey();
-            Console.Clear();*/
-            Combates.InimigoGenerico();
+            Console.Clear();
             
         }
         public static void Sala1()
