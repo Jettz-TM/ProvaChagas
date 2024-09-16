@@ -8,10 +8,10 @@ namespace Jogo
         public static string diretorio = Directory.GetCurrentDirectory(); // * Obtém o diretório onde o executável está localizado
         // * pra usar o sons, usar esse comando pra formar o caminho string Som = Path.Combine(diretorio, "assets", "aaa.wav");
         public static string?[,] matrizinv = new string?[9, 1]{
-            {null},
-            {null},
-            {null},
-            {null},
+            {"Energetico"},
+            {"Soco Inglês"},
+            {"Uniforme do Interclasse"},
+            {"Salgado"},
             {null},
             {null},
             {null},
@@ -43,6 +43,7 @@ namespace Jogo
             */
             // ! Para chamar qualquer coisa dos outros arquivos.cs, por o nome da classe junto do nome da variavel/função
 
+            MenuInicio.Menu(); //* leva pro menu
             CriacaoPersonagem.Personagem(); //*leva pra criação de personagem (nome, classe e atributos)
             introechegada.PlayLooping();
             Salas.Introdução();

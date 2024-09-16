@@ -2,6 +2,7 @@ using System;
 using System.Media;
 namespace Jogo{
     class Inventario{
+        public static int linha;
         public static void ShowInv(string?[,] matrizinv){
 
             for (int i = 0; i < matrizinv.GetLength(0); i++){ // * Coluna
@@ -17,7 +18,6 @@ namespace Jogo{
             }
         }
         public static void ChangeInv(string?[,] matrizinv, string item){
-            int coluna = 0, linha;
             while(true){
                 ShowInv(matrizinv); // * Mostra o inventario
 
@@ -28,13 +28,13 @@ namespace Jogo{
                     Console.Clear();
                     System.Console.WriteLine("Escolha um slot valido");
                 }
-                else if(matrizinv[linha -1, coluna] != null){
+                else if(matrizinv[linha -1, 0] != null){
                     Console.Clear();
                     System.Console.WriteLine("Ja existe algo nesse slot, favor escolher outro slot");
                 }
                 else{
                     Console.Clear();
-                    matrizinv[linha -1, coluna] = item;
+                    matrizinv[linha -1, 0] = item;
                     break;
                 }   
             }

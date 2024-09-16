@@ -232,8 +232,23 @@ namespace Jogo
                                 }
                                 break;
                         }
+                        if (escolha == 3){
+                            while(true){
+                                Inventario.ShowInv(Program.matrizinv);
+                                if(!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha < 1 ||  Inventario.linha > 9){
+                                    Console.Clear();
+                                    Console.WriteLine("escolha um slot valido");
+                                }
+                                else{
+                                    Itens.Acess(Program.matrizinv, Inventario.linha);
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            }
+                        }
 
                     }
+                    
                 }
 
                 {
