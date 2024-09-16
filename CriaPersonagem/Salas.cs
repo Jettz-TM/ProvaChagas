@@ -58,6 +58,8 @@ namespace Jogo
             System.Console.WriteLine("Aluno transformado: 01110011\n01100101\n00100000\n01101101\n01100001\n01110100\n01100001");
             ////tradução: se mata
             Console.ReadKey();
+            Console.Clear();
+            Combates.InimigoGenerico();
             player.Stop();
             Console.Clear();
         }

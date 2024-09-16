@@ -5,6 +5,7 @@ namespace Jogo
     class Combates //Classe pra ter os combates guardados (por enquanto só do gpt e do inimigo generico)
     {
         public static int morreu, vidaGPT = 120, dano, acaogpt, escolha, resposta;
+        public static bool pode = true;
         public static void ChatGPT()
         {
             morreu = 0;
@@ -110,6 +111,7 @@ namespace Jogo
                 int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {
+                    pode = true;
                     System.Console.WriteLine("--- Turno do jogador ---");
                     System.Console.WriteLine($"Vida: {CriacaoPersonagem.vida} | Mana: {CriacaoPersonagem.mana}\n Vida do inimigo: {vidaTotalInimigo}");
                     System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
@@ -236,8 +238,23 @@ namespace Jogo
                 }
                 else if (escolha == 3)
                 {
-                    System.Console.WriteLine("--- Escolha um item ---");
-                    System.Console.WriteLine("-Se vira maumau\n-Se vira maumau\n-Se vira maumau\n");
+                    Console.Clear();
+                    while(Combates.pode){
+                        System.Console.WriteLine("--- Escolha um item ---\nDigite 0 para voltar");
+                        Inventario.ShowInv(Program.matrizinv);
+                        if(!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 ||Inventario.linha <= -1){
+                            Console.Clear();
+                            System.Console.WriteLine("Escolha uma opção valida");
+                        }
+                        else if (Inventario.linha == 0){
+                            break;
+                        }
+                        else{
+                            Console.Clear();
+                            Itens.Acess(Program.matrizinv, Inventario.linha);
+                            Console.ReadKey();
+                        }
+                    }
                 }
 
                 if (vidaTotalInimigo > 0 && menu == 4)
