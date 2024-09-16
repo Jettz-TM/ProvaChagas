@@ -102,7 +102,7 @@ namespace Jogo
             CriacaoPersonagem.vidaTotal = 50 + 5 * CriacaoPersonagem.resist;
             int vidaTotalInimigo = 50, ataqueinimigo;
             Random random = new Random();
-            int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11);
+            int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma;
 
 
             while (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo > 0)
@@ -239,17 +239,21 @@ namespace Jogo
                 else if (escolha == 3)
                 {
                     Console.Clear();
-                    while(Combates.pode){
+                    while (Combates.pode)
+                    {
                         System.Console.WriteLine("--- Escolha um item ---\nDigite 0 para voltar");
                         Inventario.ShowInv(Program.matrizinv);
-                        if(!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 ||Inventario.linha <= -1){
+                        if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
+                        {
                             Console.Clear();
                             System.Console.WriteLine("Escolha uma opção valida");
                         }
-                        else if (Inventario.linha == 0){
+                        else if (Inventario.linha == 0)
+                        {
                             break;
                         }
-                        else{
+                        else
+                        {
                             Console.Clear();
                             Itens.Acess(Program.matrizinv, Inventario.linha);
                             Console.ReadKey();
@@ -260,22 +264,25 @@ namespace Jogo
                 if (vidaTotalInimigo > 0 && menu == 4)
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
-                    int escolhainimigo = random.Next(0, 3);
+                    int escolhainimigo = random.Next(0, 2);
 
                     if (escolhainimigo == 0)
                     {
-                        CriacaoPersonagem.vidaTotal -= ataqueinimigo;
+                        CriacaoPersonagem.vidaTotal -= ataqueinimigo - CriacaoPersonagem.buffArmadura;
                         System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo} de dano!");
                     }
                     else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
-                        vidaTotalInimigo += danoMurro + CriacaoPersonagem.forca;
-                    }
-                    else if (escolhainimigo == 2)
-                    {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
-                        vidaTotalInimigo += danoPlayer + CriacaoPersonagem.forca;
+                        if (escolha == 1)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoMurro + CriacaoPersonagem.forca;
+                        }
+                        else if (escolha == 2)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoPlayer + CriacaoPersonagem.forca;
+                        }
                     }
                 }
             }
@@ -302,24 +309,23 @@ namespace Jogo
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
             CriacaoPersonagem.vidaTotal = 50 + 5 * CriacaoPersonagem.resist;
-            int vidaTotalInimigo = 80, ataqueinimigo, danoPlayer;
+            int vidaTotalInimigo = 80, ataqueinimigo;
             Random random = new Random();
+            int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma;
+
 
             while (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo > 0)
             {
                 ataqueinimigo = random.Next(1, 19);
-
-                int menu = 0;
-
-                int escolha = 0, escolhaluta;
+                int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {
+                    pode = true;
                     System.Console.WriteLine("--- Turno do jogador ---");
                     System.Console.WriteLine($"Vida: {CriacaoPersonagem.vida} | Mana: {CriacaoPersonagem.mana}\n Vida do inimigo: {vidaTotalInimigo}");
                     System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
                 }
-
-
+                int.TryParse(Console.ReadLine(), out escolha);
                 if (escolha == 1)
                 {
                     menu = 1;
@@ -330,9 +336,8 @@ namespace Jogo
                         int.TryParse(Console.ReadLine(), out escolhaluta);
                         if (escolhaluta == 1)
                         {
-                            danoPlayer = random.Next(1, 11);
-                            vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
-                            System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                            vidaTotalInimigo -= danoMurro + CriacaoPersonagem.forca;
+                            System.Console.WriteLine($"Você deu {danoMurro + CriacaoPersonagem.forca} de dano");
                             menu = 4;
                         }
                         else if (escolhaluta == 2)
@@ -357,10 +362,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                                        menu = 0;
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -372,6 +376,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você joga um robô entre você e o inimígo e evita o dano nesse turno");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -386,9 +391,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -400,6 +405,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você cobra falta e muda a direção do ataque pro lado");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -414,9 +420,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -428,6 +434,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você rouba o elixir do inimigo e ele não consegue atacar nesse turno");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -438,19 +445,53 @@ namespace Jogo
 
                     }
                 }
-
+                else if (escolha == 3)
                 {
-                    System.Console.WriteLine("--- Turno da Lista ---");
+                    Console.Clear();
+                    while (Combates.pode)
+                    {
+                        System.Console.WriteLine("--- Escolha um item ---\nDigite 0 para voltar");
+                        Inventario.ShowInv(Program.matrizinv);
+                        if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
+                        {
+                            Console.Clear();
+                            System.Console.WriteLine("Escolha uma opção valida");
+                        }
+                        else if (Inventario.linha == 0)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Itens.Acess(Program.matrizinv, Inventario.linha);
+                            Console.ReadKey();
+                        }
+                    }
+                }
+
+                if (vidaTotalInimigo > 0 && menu == 4)
+                {
+                    System.Console.WriteLine("--- Turno do inimigo ---");
                     int escolhainimigo = random.Next(0, 2);
 
                     if (escolhainimigo == 0)
                     {
-                        CriacaoPersonagem.vidaTotal -= ataqueinimigo;
-                        System.Console.WriteLine($"A lista mandou um código errado e deui {ataqueinimigo} de dano.");
+                        CriacaoPersonagem.vidaTotal -= ataqueinimigo - CriacaoPersonagem.buffArmadura;
+                        System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo} de dano!");
                     }
-                    else
+                    else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("A lista se protegeu e não tomou dano nesse turno");
+                        if (escolha == 1)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoMurro + CriacaoPersonagem.forca;
+                        }
+                        else if (escolha == 2)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoPlayer + CriacaoPersonagem.forca;
+                        }
                     }
                 }
             }
@@ -477,24 +518,23 @@ namespace Jogo
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
             CriacaoPersonagem.vidaTotal = 50 + 5 * CriacaoPersonagem.resist;
-            int vidaTotalInimigo = 30, ataqueinimigo, danoPlayer;
+            int vidaTotalInimigo = 30, ataqueinimigo;
             Random random = new Random();
+            int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma;
+
 
             while (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo > 0)
             {
                 ataqueinimigo = random.Next(1, 19);
-
-                int menu = 0;
-
-                int escolha = 0, escolhaluta;
+                int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {
+                    pode = true;
                     System.Console.WriteLine("--- Turno do jogador ---");
                     System.Console.WriteLine($"Vida: {CriacaoPersonagem.vida} | Mana: {CriacaoPersonagem.mana}\n Vida do inimigo: {vidaTotalInimigo}");
                     System.Console.WriteLine("1 - Atacar\n2 - Ação especial\n3 - Item");
                 }
-
-
+                int.TryParse(Console.ReadLine(), out escolha);
                 if (escolha == 1)
                 {
                     menu = 1;
@@ -505,9 +545,8 @@ namespace Jogo
                         int.TryParse(Console.ReadLine(), out escolhaluta);
                         if (escolhaluta == 1)
                         {
-                            danoPlayer = random.Next(1, 11);
-                            vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
-                            System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                            vidaTotalInimigo -= danoMurro + CriacaoPersonagem.forca;
+                            System.Console.WriteLine($"Você deu {danoMurro + CriacaoPersonagem.forca} de dano");
                             menu = 4;
                         }
                         else if (escolhaluta == 2)
@@ -532,10 +571,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
-                                        menu = 0;
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -547,6 +585,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você joga um robô entre você e o inimígo e evita o dano nesse turno");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -561,9 +600,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -575,6 +614,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você cobra falta e muda a direção do ataque pro lado");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -589,9 +629,9 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 15)
                                     {
                                         CriacaoPersonagem.mana -= 15;
-                                        danoPlayer = random.Next(5, 21);
                                         vidaTotalInimigo -= danoPlayer + CriacaoPersonagem.forca;
                                         System.Console.WriteLine($"Você deu {danoPlayer + CriacaoPersonagem.forca} de dano");
+                                        menu = 4;
                                     }
                                     else
                                     {
@@ -603,6 +643,7 @@ namespace Jogo
                                 {
                                     CriacaoPersonagem.mana -= 5;
                                     System.Console.WriteLine("Você rouba o elixir do inimigo e ele não consegue atacar nesse turno");
+                                    menu = 4;
                                 }
                                 else if (escolhaluta == 3)
                                 {
@@ -613,19 +654,53 @@ namespace Jogo
 
                     }
                 }
+                else if (escolha == 3)
+                {
+                    Console.Clear();
+                    while (Combates.pode)
+                    {
+                        System.Console.WriteLine("--- Escolha um item ---\nDigite 0 para voltar");
+                        Inventario.ShowInv(Program.matrizinv);
+                        if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
+                        {
+                            Console.Clear();
+                            System.Console.WriteLine("Escolha uma opção valida");
+                        }
+                        else if (Inventario.linha == 0)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Itens.Acess(Program.matrizinv, Inventario.linha);
+                            Console.ReadKey();
+                        }
+                    }
+                }
 
+                if (vidaTotalInimigo > 0 && menu == 4)
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
                     int escolhainimigo = random.Next(0, 2);
 
                     if (escolhainimigo == 0)
                     {
-                        CriacaoPersonagem.vidaTotal -= ataqueinimigo;
+                        CriacaoPersonagem.vidaTotal -= ataqueinimigo - CriacaoPersonagem.buffArmadura;
                         System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo} de dano!");
                     }
-                    else
+                    else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                        if (escolha == 1)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoMurro + CriacaoPersonagem.forca;
+                        }
+                        else if (escolha == 2)
+                        {
+                            System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                            vidaTotalInimigo += danoPlayer + CriacaoPersonagem.forca;
+                        }
                     }
                 }
             }
