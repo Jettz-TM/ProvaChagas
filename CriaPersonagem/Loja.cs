@@ -6,7 +6,7 @@ namespace Jogo
     {
         public static void Tonhao()
         {
-            int moedas = 050, preco;
+            int moedas = 50, preco;
             char escolha1, escolha2;
             bool teste = false;
 
@@ -20,7 +20,7 @@ namespace Jogo
                     teste = true;
                     while (teste == true)
                     {
-                        System.Console.WriteLine($"Moedas de ouro: {moedas}\n0 - Sair\n1 - Poção de cura: 5$\n2 - Arnadura de couro: 10$\n3 - Espada de ferro: 15$");
+                        System.Console.WriteLine($"Moedas de ouro: {moedas}\n0 - Sair\n1 - Salgado: 5$\n2 - Energético: 5$\n3 - Camisa do interclasse: 15$");
 
                         char.TryParse(System.Console.ReadLine(), out escolha2);
 
@@ -39,8 +39,8 @@ namespace Jogo
                         }
                         else if (escolha2 == '2')
                         {
-                            preco = 10;
-                            if (moedas < 10)
+                            preco = 5;
+                            if (moedas < 5)
                             {
                                 System.Console.WriteLine("MOEDAS INSUFICIENTE!!!");
                                 Console.ReadLine();

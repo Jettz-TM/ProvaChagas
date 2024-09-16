@@ -82,3 +82,22 @@ C:\Users\user\Documents\repositorio_git\ProvaChagas-1\CriaPersonagem\obj\Debug\n
 C:\Users\user\Documents\repositorio_git\ProvaChagas-1\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.genruntimeconfig.cache
 C:\Users\user\Documents\repositorio_git\ProvaChagas-1\CriaPersonagem\obj\Debug\net8.0\ref\CriaPersonagem.dll
 >>>>>>> a4510523ec63a09c341c0e89d306ebde8b48a4da
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.csproj.AssemblyReference.cache
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.AssemblyInfoInputs.cache
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.AssemblyInfo.cs
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.csproj.CoreCompileInputs.cache
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.sourcelink.json
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.dll
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\refint\CriaPersonagem.dll
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.pdb
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\CriaPersonagem.exe
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\CriaPersonagem.deps.json
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\CriaPersonagem.runtimeconfig.json
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\CriaPersonagem.dll
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\CriaPersonagem.pdb
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\System.Windows.Extensions.dll
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\build\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPers.155D52F4.Up2Date
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.genruntimeconfig.cache
+C:\Users\j02\Documents\Milton Roney de Oliveira Nobre\lógica de programação\C#\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\ref\CriaPersonagem.dll
