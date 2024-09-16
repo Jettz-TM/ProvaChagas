@@ -6,7 +6,7 @@ namespace Jogo
     {
         public static void Tonhao()
         {
-            int moedas = 50, preco;
+            int moedas = 050, preco;
             char escolha1, escolha2;
             bool teste = false;
 

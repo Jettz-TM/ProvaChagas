@@ -68,9 +68,20 @@ namespace Jogo
             Console.WriteLine($"{Program.nome}:Finalmente,um ar fresco");
             Console.WriteLine($"{Program.nome}:Impossivel ter uma coisa dessas aqui!");
             Console.WriteLine($"{Program.nome}:Uma loja do meu gradne amigo Tonhão! E um carro mal estacionado?");
-            Console.WriteLine("Onde você gostaria de ir? (digite 1 ou 2)");
-            Console.WriteLine("1- Loja do tonhão  2- Carro");
-            int.TryParse(Console.ReadLine(), out respostaloja);
+            while (true)
+            {
+                Console.WriteLine("Onde você gostaria de ir?");
+                Console.WriteLine("1- Loja do tonhão  2- Carro");
+                if (!int.TryParse(Console.ReadLine(), out respostaloja) || respostaloja >= 3 || respostaloja <= 0)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Escolha uma opção valida");
+                }
+                else
+                {
+                    break;
+                }
+            }
 
             switch (respostaloja)
             {
@@ -80,7 +91,6 @@ namespace Jogo
                 case 2:
                     Console.WriteLine("Um carro com placa 4OO2");
                     Console.ReadKey();
-                    Sala3();
                     break;
             }
 
@@ -90,16 +100,64 @@ namespace Jogo
         }
         public static void Sala4()
         {
-            Console.WriteLine("???:Finalmente você chegou");
-            Console.WriteLine("???:Eu sou o Chagas, o maior programador de todos os tempos! Ajoelhe-se perante a mim!");
-            Console.WriteLine("Chagas:Agora que eu descobri o poder que o Chat GPT tem, você não tem como me vencer!");
-            Console.WriteLine("Chagas:Sinta o poder do Chat GPT");
+            int escolha;
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Ah meu Deus, uma sala convenientemente vazia!");
             Console.ReadKey();
-            //to tipo o chico buarque quando n deixaram eu coolocar pro chagas dizer "puta, biscate" e "gigolo"
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acho que eu consigo usar ela para descansar ou usar itens.");
+            Console.ReadKey();
+            System.Console.Write("\nQuer fazer o que??\n\n1- Descansar   2- Usar poção   3- Sair\n\nEscolha: ");
+            int.TryParse(Console.ReadLine(), out escolha);
+            switch (escolha)
+            {
+                case 1:
+                    Console.WriteLine("Tu deita e dorme, mesmo o chat gpt corrompendo tudo na tua volta");
+                    Console.ReadKey();
+                    Console.WriteLine("Tu acaba de curar 15 de vida.");
+                    Console.ReadKey();
+                    CriacaoPersonagem.vida += 15;
+                    Console.WriteLine("Tu se prepara e vai desGPTzar o chat gpt");
+                    Console.ReadKey();
+                    break;
+                case 2:
+                    Console.WriteLine("Tu bebe água pra queimar os circuitos do chat gpt");
+                    Console.ReadKey();
+                    Console.WriteLine("Tu cura XX de vida"); // TODO: adicionar os itens
+                    Console.ReadKey();
+                    break;
+                case 3:
+                    Console.WriteLine("Tu sai da sala.");
+                    Console.ReadKey();
+                    break;
+            }
         }
         public static void Sala5()
         {
-            //colocar o sistema de batalha contra o chat gpt
+            //* Sim, o chagas e o chat gpt tem as falas da equipe rocket
+            System.Console.WriteLine("*Você entra na sala, e você vê uma silhueta familiar, junta de mais duas silhuetas que você não conhece*");
+            Console.ReadKey();
+            Console.WriteLine("???: Preparem-se para a encrenca");
+            Console.ReadKey();
+            Console.WriteLine("???: Encrenca em dobro");
+            Console.ReadKey();
+            Console.WriteLine("???: Para proteger o mundo da devastação");
+            Console.ReadKey();
+            Console.WriteLine("???: Para unir as pessoas de nossa nação");
+            Console.ReadKey();
+            Console.WriteLine("???: Para denunciar os males da verdade e do amor");
+            Console.ReadKey();
+            Console.WriteLine("???: Para estender o nosso poder às estrelas");
+            Console.ReadKey();
+            Console.WriteLine("Chagas: Chagas!");
+            Console.ReadKey();
+            Console.WriteLine("Chat GPT: Chat GPT!");
+            Console.ReadKey();
+            Console.WriteLine("Chagas: Estamos programando na velocidade da luz");
+            Console.ReadKey();
+            Console.WriteLine("Chat GPT: Renda-se agora ou preparem-se para resolver uma atividade");
+            Console.ReadKey();
+            Console.WriteLine("Lista de Atividades 5: Lista de Atividades 5, é isso aí");
+            Console.ReadKey();
+            Combates.Lista5();
         }
 
         public static void Sala6()
@@ -115,8 +173,9 @@ namespace Jogo
         public static void Sala8()
         {
             Console.WriteLine("Chagas: Não achei que tu ia chegar tão longe, mas ainda sim, até o Chat GPt faz código melhor que tu.");
-            Console.WriteLine("Chagas: Divino 'programador' imortal das 8 linguas de codigo dotnet summon GPT");
-            Console.WriteLine("Chat GPT: Minhas habilidades de programação superam as suas.");
+            Console.WriteLine("Chagas: Agora que eu descobri o poder que o Chat GPT tem, você não tem como me vencer!");
+            Console.WriteLine("Chagas: Sinta o poder do Chat GPT");
+            Combates.ChatGPT();
         }
         public static void Sala9()
         {

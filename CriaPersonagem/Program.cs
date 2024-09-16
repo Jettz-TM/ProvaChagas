@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Xml.Serialization;
 using System.Media;
-namespace Jogo{
+namespace Jogo
+{
     class Program
     {
         public static string diretorio = Directory.GetCurrentDirectory(); // * Obtém o diretório onde o executável está localizado
         // * pra usar o sons, usar esse comando pra formar o caminho string Som = Path.Combine(diretorio, "assets", "aaa.wav");
-        public static string?[,] matrizinv = new string?[9 , 1]{
+        public static string?[,] matrizinv = new string?[9, 1]{
             {null},
             {null},
             {null},
@@ -17,10 +18,10 @@ namespace Jogo{
             {null},
             {null},};
         public static string? nome;
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string Som = Path.Combine(Program.diretorio, "assets", "introechegada.wav");
-            System.Media.SoundPlayer introechegada = new System.Media.SoundPlayer (Som);
+            System.Media.SoundPlayer introechegada = new System.Media.SoundPlayer(Som);
             // TODO: quando terminar as salas, organizar com o roteiro e colocar os diálogos
             // TODO: Fazer os arquivos separados de cada função, para fins de organização
             /*
@@ -38,20 +39,27 @@ namespace Jogo{
             ! }
             ! Terceiro: Vale lembrar, a class SEMPRE tem que ter o nome igual ao nome do arquivo.cs
             ! Quarto: Vale lembrar tambem, os codigos tem que terminar com o ; no final, caso contrario o codigo NÃO funciona
-            ! Quinto: Pode tirar dúvida com qualquer um, só perguntar no grupo Jettz que alguém vai responder (alguma hora)
+            ! Quinto: Pode tirar dúvidaTotal com qualquer um, só perguntar no grupo Jettz que alguém vai responder (alguma hora)
             */
             // ! Para chamar qualquer coisa dos outros arquivos.cs, por o nome da classe junto do nome da variavel/função
-            
+
             CriacaoPersonagem.Personagem(); //*leva pra criação de personagem (nome, classe e atributos)
-             //*combate contra um inimígo genérico (pontos de vida e ataques provisórios)
             introechegada.PlayLooping();
             Salas.Introdução();
             Salas.Sala1();
             introechegada.Stop();
             Salas.Sala2();
+            Salas.Sala3();
+            Salas.Sala4();
+            Salas.Sala5();
+            Combates.InimigoGenerico(); //*combate contra um inimígo genérico (pontos de vidaTotal e ataques provisórios)
             System.Console.WriteLine("Work in Progress :)");
             Console.ReadKey();
-            //Combates.ChatGPT(); //*combate contra o chatpgt, no final do jogo
+
+            // * combate contra o chat gpt e a loja do tonhão em comentario pq ainda não tão 100%
+            // * ou a parte em que els entram ainda não foi terminada
+
+            // Combates.ChatGPT(); //* combate contra o chatpgt, no final do jogo
             //Loja.Tonhao(); //*Loja do tonhão (moedas e itens a venda provisórios)
         }
 
