@@ -49,6 +49,8 @@ namespace Jogo
             Salas.Introdução();
             Salas.Sala1();
             introechegada.Stop();
+            Combates.InimigoGenerico();
+            Combates.InimigoGenerico();
             Salas.Sala2();
             Salas.Sala3();
             Salas.Sala4();

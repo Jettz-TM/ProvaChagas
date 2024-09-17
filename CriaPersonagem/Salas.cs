@@ -61,6 +61,8 @@ namespace Jogo
             Console.Clear();
             Combates.InimigoGenerico();
             player.Stop();
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Isso foi muito estranho... Enfim, tem uma saida aqui, é melhor eu seguir por este caminho.");
+            System.Console.WriteLine("**");
             Console.Clear();
         }
         public static void Sala3()
@@ -68,9 +70,9 @@ namespace Jogo
             //TODO: Colocar a  opção de sair
             int respostaloja;
 
-            Console.WriteLine($"{Program.nome}:Finalmente,um ar fresco");
+            Console.WriteLine($"{Program.nome}:Finalmente, um ar fresco.");
             Console.WriteLine($"{Program.nome}:Impossivel ter uma coisa dessas aqui!");
-            Console.WriteLine($"{Program.nome}:Uma loja do meu gradne amigo Tonhão! E a porta da proxima sala");
+            Console.WriteLine($"{Program.nome}:Uma loja do meu grande amigo Tonhão! E a porta da proxima sala");
             while (true)
             {
                 Console.WriteLine("Onde você gostaria de ir?");
@@ -92,7 +94,7 @@ namespace Jogo
                     Loja.Tonhao();
                     break;
                 case 2:
-                    Console.WriteLine("*Voce passa pra proxima sala ignorando a loja*");
+                    Console.WriteLine("*Você passa pra proxima sala, ignorando a loja*");
                     Console.ReadKey();
                     break;
             }
@@ -106,29 +108,29 @@ namespace Jogo
             int escolha;
             System.Console.WriteLine($"{CriacaoPersonagem.nome}: Ah meu Deus, uma sala convenientemente vazia!");
             Console.ReadKey();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acho que eu consigo usar ela para descansar ou usar itens.");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acho que eu consigo usar ela para descansar, ou usar itens.");
             Console.ReadKey();
-            System.Console.Write("\nQuer fazer o que??\n\n1- Descansar   2- Usar poção   3- Sair\n\nEscolha: ");
+            System.Console.Write("\nO que quer fazer o que??\n\n1- Descansar   2- Usar poção   3- Sair\n\nEscolha: ");
             int.TryParse(Console.ReadLine(), out escolha);
             switch (escolha)
             {
                 case 1:
-                    Console.WriteLine("Tu deita e dorme, mesmo o chat gpt corrompendo tudo na tua volta");
+                    Console.WriteLine("Você deita e dorme, mesmo o Chat GPT corrompendo tudo na tua volta");
                     Console.ReadKey();
-                    Console.WriteLine("Tu acaba de curar 15 de vida.");
+                    Console.WriteLine("Você cura 15 de vida.");
                     Console.ReadKey();
                     CriacaoPersonagem.vida += 15;
-                    Console.WriteLine("Tu se prepara e vai desGPTzar o chat gpt");
+                    Console.WriteLine("Tu se prepara e vai desGPTzar o Chat GPT");
                     Console.ReadKey();
                     break;
                 case 2:
-                    Console.WriteLine("Tu bebe água pra queimar os circuitos do chat gpt");
+                    Console.WriteLine("Você bebe água pra queimar os circuitos do Chat GPT");
                     Console.ReadKey();
-                    Console.WriteLine("Tu cura XX de vida"); // TODO: adicionar os itens
+                    Console.WriteLine("Você cura XX de vida"); // TODO: adicionar os itens
                     Console.ReadKey();
                     break;
                 case 3:
-                    Console.WriteLine("Tu sai da sala.");
+                    Console.WriteLine("Você sai da sala.");
                     Console.ReadKey();
                     break;
             }
@@ -170,20 +172,20 @@ namespace Jogo
 
         public static void Sala7()
         {   //TODO: adicionar loja + codigo
-            Console.WriteLine("Novamente meu grande amigo Tonhão!");
+            Console.WriteLine("Novamente, meu grande amigo Tonhão!");
         }
 
         public static void Sala8()
         {
-            Console.WriteLine("Chagas: Não achei que tu ia chegar tão longe, mas ainda sim, até o Chat GPt faz código melhor que tu.");
+            Console.WriteLine("Chagas: Não achei que tu ia chegar tão longe, mas ainda sim, até o Chat GPT programa melhor que tu.");
             Console.WriteLine("Chagas: Agora que eu descobri o poder que o Chat GPT tem, você não tem como me vencer!");
             Console.WriteLine("Chagas: Sinta o poder do Chat GPT");
             Combates.ChatGPT();
         }
         public static void Sala9()
         {
-            Console.WriteLine("Chagas:Impossivel! Você chegou até aqui,isto é totalmente impossivel");
-            Console.WriteLine("Agora não há mais volta! Eu mesmo, Chagas the programmer, irei te derrotar.");
+            Console.WriteLine("Chagas:Impossivel! Você chegou até aqui,isto é totalmente impossível!");
+            Console.WriteLine("Agora não há mais volta! Eu mesmo, Chagas, O Programador, irei te derrotar.");
             //começa a batalha
         }
     }

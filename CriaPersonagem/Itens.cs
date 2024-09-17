@@ -66,7 +66,7 @@ namespace Jogo
                 if(chanceMorte <= 3){
                     CriacaoPersonagem.vida -= dano;
                     System.Console.WriteLine("?!");
-                    Console.WriteLine($"Você sente um aperto no coração, voce perde {dano}");
+                    Console.WriteLine($"Você sente um aperto no coração, voce perde {dano} pontos de vida");
                 }
                 Program.matrizinv[Inventario.linha -1, 0] = null;
                 Combates.pode = false;

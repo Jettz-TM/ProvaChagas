@@ -58,16 +58,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\xchar\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\j02\\.nuget\\packages\\": {}
->>>>>>> c18513fa8f7a2fb23b36b8b788dba8141f732f1b
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
       "projectName": "CriaPersonagem",
       "projectPath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
@@ -76,17 +71,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\xchar\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\j02\\Documents\\Milton Roney de Oliveira Nobre\\lógica de programação\\C#\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
-      "projectName": "CriaPersonagem",
-      "projectPath": "C:\\Users\\j02\\Documents\\Milton Roney de Oliveira Nobre\\lógica de programação\\C#\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
-      "packagesPath": "C:\\Users\\j02\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j02\\Documents\\Milton Roney de Oliveira Nobre\\lógica de programação\\C#\\ProvaChagas\\CriaPersonagem\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\j02\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> c18513fa8f7a2fb23b36b8b788dba8141f732f1b
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -136,12 +120,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
->>>>>>> c18513fa8f7a2fb23b36b8b788dba8141f732f1b
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\criapersonagem\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

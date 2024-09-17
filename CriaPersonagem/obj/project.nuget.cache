@@ -1,18 +1,17 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Hiw4yQ6i41E=",
+  "dgSpecHash": "nssM/1l1Ke8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
+  "projectFilePath": "C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\criapersonagem\\CriaPersonagem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xchar\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
-=======
-  "dgSpecHash": "ZDpTzThk+tU=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\j02\\Documents\\Milton Roney de Oliveira Nobre\\lógica de programação\\C#\\ProvaChagas\\CriaPersonagem\\CriaPersonagem.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\j02\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
->>>>>>> c18513fa8f7a2fb23b36b8b788dba8141f732f1b
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\xchar\\OneDrive\\Documentos\\Logica Computacional\\C#\\Jogo\\ProvaChagas\\criapersonagem\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
