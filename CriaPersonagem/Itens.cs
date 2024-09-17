@@ -26,18 +26,21 @@ namespace Jogo
         {
             int potion = 15;
 
-            if (CriacaoPersonagem.vida >= CriacaoPersonagem.vidaTotal)
-            {
-                CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
-                Console.WriteLine("Tua vida ta cheia seu jumento");
+            if(CriacaoPersonagem.vida == CriacaoPersonagem.vidaTotal){
+                Console.WriteLine("Tua vida tá cheia, aprendiz mais fraco do chat gpt");
             }
 
             else if (CriacaoPersonagem.vida < CriacaoPersonagem.vidaTotal)
             {
+                CriacaoPersonagem.vida = potion + CriacaoPersonagem.vida;
                 Console.WriteLine($"Você recuperou {potion} pontos de vida");
-                Program.matrizinv[Inventario.linha, 0] = null;
+                if (CriacaoPersonagem.vida >= CriacaoPersonagem.vidaTotal)
+            {
+                CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
+                Console.WriteLine("Tua vida tá cheia");
+            }
+                Program.matrizinv[Inventario.linha -1, 0] = null;
                 Combates.pode = false;
-                CriacaoPersonagem.vida = potion + CriacaoPersonagem.vida; //vida atual
             }
             
         }
@@ -47,23 +50,26 @@ namespace Jogo
             int energetico = 15;
             int chanceMorte = random.Next(1, 11);
             int dano = random.Next(5, 16);
-            if (CriacaoPersonagem.mana >= CriacaoPersonagem.manaTotal)
-            {
-                CriacaoPersonagem.mana = CriacaoPersonagem.manaTotal;
+            if(CriacaoPersonagem.mana == CriacaoPersonagem.manaTotal){
                 Console.WriteLine("Tua mana tá cheia, aprendiz mais fraco do chat gpt");
             }
-            
+
             else if (CriacaoPersonagem.mana < CriacaoPersonagem.manaTotal)
             {
+                CriacaoPersonagem.mana = energetico + CriacaoPersonagem.mana;
                 Console.WriteLine($"Você recuperou {energetico} pontos de mana");
+                if (CriacaoPersonagem.mana >= CriacaoPersonagem.manaTotal)
+            {
+                CriacaoPersonagem.mana = CriacaoPersonagem.manaTotal;
+                Console.WriteLine("Tua mana tá cheia");
+            }
                 if(chanceMorte <= 3){
                     CriacaoPersonagem.vida -= dano;
                     System.Console.WriteLine("?!");
                     Console.WriteLine($"Você sente um aperto no coração, voce perde {dano}");
                 }
-                CriacaoPersonagem.mana = energetico + CriacaoPersonagem.mana;
+                Program.matrizinv[Inventario.linha -1, 0] = null;
                 Combates.pode = false;
-                Program.matrizinv[Inventario.linha, 0] = null;
             }
         }
         public static void ItemPassivo(){

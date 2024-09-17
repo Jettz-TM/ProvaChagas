@@ -102,11 +102,11 @@ namespace Jogo
             CriacaoPersonagem.vidaTotal = 50 + 5 * CriacaoPersonagem.resist;
             int vidaTotalInimigo = 50, ataqueinimigo;
             Random random = new Random();
-            int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma;
 
 
             while (CriacaoPersonagem.vidaTotal > 0 && vidaTotalInimigo > 0)
             {
+                int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma;
                 ataqueinimigo = random.Next(1, 19);
                 int menu = 0, escolha, escolhaluta;
                 if (menu == 0)

@@ -120,3 +120,10 @@ C:\Users\user\Documents\repositorio_git\ProvaChagas\CriaPersonagem\obj\Debug\net
 C:\Users\user\Documents\repositorio_git\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.pdb
 C:\Users\user\Documents\repositorio_git\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\CriaPersonagem.genruntimeconfig.cache
 C:\Users\user\Documents\repositorio_git\ProvaChagas\CriaPersonagem\obj\Debug\net8.0\ref\CriaPersonagem.dll
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\CriaPersonagem.exe
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\CriaPersonagem.deps.json
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\CriaPersonagem.runtimeconfig.json
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\CriaPersonagem.dll
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\CriaPersonagem.pdb
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\System.Windows.Extensions.dll
+C:\Users\xchar\OneDrive\Documentos\Logica Computacional\C#\Jogo\ProvaChagas\criapersonagem\build]\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
