@@ -4,7 +4,7 @@ namespace Jogo
 {
     class CriacaoPersonagem
     {
-        public static int vidaTotal = 50, manaTotal = 25, forca = 0, resist = 0, intel = 0, classe = 0, vida = 0, mana, buffArma = 0, buffArmadura = 0;
+        public static int vidaTotal = 50, manaTotal = 25, forca = 0, resist = 0, intel = 0, classe = 0, vida = 0, mana, buffArma = 0, buffArmadura = 0, dinheiro = 25;
         public static string? nome;
         public static void Personagem()
         {
@@ -90,6 +90,9 @@ namespace Jogo
             vida = vidaTotal;
             manaTotal += 5 * intel;
             mana = manaTotal;
+            Console.Clear();
+            System.Console.WriteLine($"{vidaTotal} de vida total, {manaTotal} de mana total, {forca} de força\nque isso ajude em sua jornada.");
+            Console.ReadKey();
             Console.Clear();
             player.Stop();
         }

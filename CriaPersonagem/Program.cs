@@ -8,8 +8,8 @@ namespace Jogo
         public static string diretorio = Directory.GetCurrentDirectory(); // * Obtém o diretório onde o executável está localizado
         // * pra usar o sons, usar esse comando pra formar o caminho string Som = Path.Combine(diretorio, "assets", "aaa.wav");
         public static string?[,] matrizinv = new string?[9, 1]{
-            {"Salgado"},
-            {"Energetico"},
+            {null},
+            {null},
             {null},
             {null},
             {null},
@@ -49,14 +49,14 @@ namespace Jogo
             Salas.Introdução();
             Salas.Sala1();
             introechegada.Stop();
-            Combates.InimigoGenerico();
-            Combates.InimigoGenerico();
             Salas.Sala2();
             Salas.Sala3();
             Salas.Sala4();
+            Salas.Sala5ponto1();
             Salas.Sala5();
-            Combates.InimigoGenerico(); //*combate contra um inimígo genérico (pontos de vidaTotal e ataques provisórios)
-            System.Console.WriteLine("Work in Progress :)");
+            Salas.Sala6();
+            Salas.Sala7();
+            Salas.Sala8();
             Console.ReadKey();
 
             // * combate contra o chat gpt e a loja do tonhão em comentario pq ainda não tão 100%

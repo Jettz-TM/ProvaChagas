@@ -23,7 +23,7 @@ namespace Jogo
                 Console.WriteLine("\n\n1- Iniciar");
                 Console.WriteLine("2- Créditos");
                 Console.WriteLine("3- Sair");
-                Console.WriteLine("\nEscolha: ");
+                Console.Write("\nEscolha: ");
 
                 if (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > 3)
                 {

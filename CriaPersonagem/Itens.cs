@@ -19,6 +19,9 @@ namespace Jogo
             else if(matrizinv[linha - 1, 0] == "Uniforme do Interclasse"){
                 ItemPassivo();
             }
+            else if(matrizinv[linha - 1, 0] == "Sorvete de Chocolate"){
+                Sorvete(Program.matrizinv, Combates.pode);
+            }
             
             
         }
@@ -74,6 +77,34 @@ namespace Jogo
         }
         public static void ItemPassivo(){
             System.Console.WriteLine("Esse item ja e equipado passivamente");
+        }
+        public static void Sorvete(string?[,] matrizinv, bool pode)
+        {
+            int potion = 10;
+            int energetico = 10;
+
+            if(CriacaoPersonagem.vida == CriacaoPersonagem.vidaTotal && CriacaoPersonagem.mana == CriacaoPersonagem.manaTotal){
+                Console.WriteLine("Tua vida e mana estão cheias, cerebro vencido");
+            }
+            else if (CriacaoPersonagem.vida < CriacaoPersonagem.vidaTotal && CriacaoPersonagem.mana < CriacaoPersonagem.manaTotal)
+            {
+                CriacaoPersonagem.vida = potion + CriacaoPersonagem.vida;
+                CriacaoPersonagem.mana = energetico + CriacaoPersonagem.mana;
+                Console.WriteLine($"Você recuperou {potion} pontos de vida e {energetico} pontos de mana");
+                if (CriacaoPersonagem.vida >= CriacaoPersonagem.vidaTotal)
+            {
+                CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
+                Console.WriteLine("Tua vida tá cheia");
+            }
+                if (CriacaoPersonagem.mana >= CriacaoPersonagem.manaTotal)
+            {
+                CriacaoPersonagem.mana = CriacaoPersonagem.manaTotal;
+                Console.WriteLine("Tua mana tá cheia");
+            }
+                Program.matrizinv[Inventario.linha -1, 0] = null;
+                Combates.pode = false;
+            }
+            
         }
     }
 }
