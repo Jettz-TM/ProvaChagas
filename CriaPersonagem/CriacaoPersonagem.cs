@@ -30,7 +30,7 @@ namespace Jogo
                 //* genio do clash (equilibrada): 1 de inteligencia, 1 de força e 1 de resistencia
                 if (!int.TryParse(Console.ReadLine(), out escolha))
                 {
-                    System.Console.WriteLine("Digite um valor valido");
+                    System.Console.WriteLine("Digite um valor válido");
                 }
                 else
                 {
