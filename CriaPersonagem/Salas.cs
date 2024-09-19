@@ -12,13 +12,13 @@ namespace Jogo
         {
             Console.WriteLine("Fortaleza, CE\n");
             Console.ReadKey();
-            Console.WriteLine("Segunda feira, as 3:33 da manhã você recebe uma mensagem do professor Jardel");
+            Console.WriteLine("Segunda-feira, as 3:33 da manhã você recebe uma mensagem do professor Jardel");
             Console.ReadKey();
             Console.WriteLine($"Jardel:{Program.nome} preciso de sua ajuda! O professor Chagas enloqueceu!");
             Console.ReadKey();
-            Console.WriteLine("Chagas transformou os alunos em algum tipo de coisa mostruosa através do Chat GPT.");
+            Console.WriteLine("Chagas transformou os alunos em algum tipo de coisa mostruosa através do ChatGPT.");
             Console.ReadKey();
-            Console.WriteLine("Preciso de sua ajuda imediatamente, venha rapido até o senai, estou na sala J2");
+            Console.WriteLine("Preciso de sua ajuda imediatamente, venha rápido até o SENAI, estou na sala J2");
             Console.ReadKey();
             System.Console.WriteLine("*Você se prepara e sai para ajudar o Jardel com essa situação*");
             Console.ReadKey();
@@ -29,11 +29,11 @@ namespace Jogo
         {
             string item = "Soco Inglês";
             CriacaoPersonagem.buffArma = 5;
-            Console.WriteLine("*Você chega no Senai, e uma situação critica, tudo parece corrompido e estranho*");
+            Console.WriteLine("*Você chega no SENAI, é uma situação crítica, tudo parece corrompido e estranho*");
             Console.ReadKey();
-            Console.WriteLine("*Nada parece fazer sentido, mas sem raciocinar muito, voce chega na sala do jardel*");
+            Console.WriteLine("*Nada parece fazer sentido, mas sem raciocinar muito, você chega na sala do Jardel*");
             Console.ReadKey();
-            Console.WriteLine("Jardel: Finalmente voce chegou!");
+            Console.WriteLine("Jardel: Finalmente você chegou!");
             Console.ReadKey();
             Console.WriteLine("Jardel: Agora nos resta enfrentar o Chagas e os alunos");
             Console.ReadKey();
@@ -44,7 +44,7 @@ namespace Jogo
             Inventario.ShowInv(Program.matrizinv);
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("\nJardel: Lembre-se que pode haver lojinhas espalhadas pelo colegio");
+            Console.WriteLine("\nJardel: Lembre-se que pode haver lojinhas espalhadas pelo colégio");
             Console.ReadKey();
             System.Console.WriteLine("*Você sai da sala do Jardel*");
             Console.ReadKey();
@@ -54,7 +54,7 @@ namespace Jogo
             string Som = Path.Combine(Program.diretorio, "assets", "infectados.wav");
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(Som);
             Console.Clear();
-            System.Console.WriteLine("*Você chega do lado de fora da sala do jardel e se depara com um Aluno corrompido*");
+            System.Console.WriteLine("*Você chega do lado de fora da sala do Jardel e se depara com um Aluno corrompido*");
             Console.ReadKey();
             player.PlayLooping();
             Console.WriteLine("Aluno transformado: V0c3 s0 p455ará s3 m3us c0dig05 corromperem!");
@@ -67,9 +67,9 @@ namespace Jogo
             Console.Clear();
             Combates.InimigoGenerico();
             player.Stop();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Isso foi muito estranho... Enfim, tem uma saida aqui, é melhor eu seguir por este caminho.");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Isso foi muito estranho... Enfim, tem uma saída aqui, é melhor eu seguir por este caminho.");
             Console.ReadKey();
-            System.Console.WriteLine("*Você avança para a proxima sala*");
+            System.Console.WriteLine("*Você avança para a próxima sala*");
             Console.ReadKey();
             Console.Clear();
         }
@@ -79,7 +79,7 @@ namespace Jogo
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(Som);
             player.PlayLooping();
             string? aw;
-            System.Console.WriteLine("*Você chega entra na sala e você se depara com varias maquinas caça-niquels*");
+            System.Console.WriteLine("*Você chega, entra na sala e se depara com várias máquinas caça-níqueis*");
             Console.ReadKey();
             System.Console.WriteLine($"{CriacaoPersonagem.nome}: Apostas! Meu passa tempo favorito");
             Console.ReadKey();
@@ -91,9 +91,9 @@ namespace Jogo
                 int gambler = random.Next(1, 5);
                 int gambler2 = random.Next(1, 5);
                 int gambler3 = random.Next(1, 5);
-                System.Console.WriteLine("Você aposta R$3 se conseguir ganhar, sua grana dobra, se perder, bom, apostas ne? rsrs");
-                Console.WriteLine($"Numero de Vitorias: {wins}");
-                Console.WriteLine($"Numero de Derrotas: {loses}");
+                System.Console.WriteLine("Você aposta R$3, se conseguir ganhar, sua grana dobra, se perder, bom, apostas né? rsrs");
+                Console.WriteLine($"Número de Vitórias: {wins}");
+                Console.WriteLine($"Número de Derrotas: {loses}");
                 Console.WriteLine($"Quanto você tem: R${CriacaoPersonagem.dinheiro}");
                 Console.WriteLine("\nQuer apostar? \n s - Sim     n - Não");
                 aw = Console.ReadLine();
@@ -140,7 +140,7 @@ namespace Jogo
                     Console.Clear();
                     System.Console.WriteLine($"{CriacaoPersonagem.nome}: bom, fica pra outro dia");
                     Console.ReadKey();
-                    System.Console.WriteLine($"*Você vai para a proxima sala*");
+                    System.Console.WriteLine($"*Você vai para a próxima sala*");
                     Console.ReadKey();
                     Console.Clear();
                     break;
@@ -153,7 +153,7 @@ namespace Jogo
                 else
                 {
                     Console.Clear();
-                    System.Console.WriteLine("Digite um valor valido");
+                    System.Console.WriteLine("Digite um valor válido");
                 }
             }
             player.Stop();
@@ -165,40 +165,40 @@ namespace Jogo
             player.PlayLooping();
             int escolha;
             bool passo = true;
-            System.Console.WriteLine("*Você chega numa sala convenientemente confortavel, tem um bebedouro aqui*");
+            System.Console.WriteLine("*Você chega numa sala convenientemente confortável, tem um bebedouro aqui*");
             Console.ReadKey();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Ah meu Deus, uma sala convenientemente confortavel!");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Ah meu Deus, uma sala convenientemente confortável!");
             Console.ReadKey();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acho que eu consigo usar ela para descansar, e me hidratar.");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acho que eu consigo usar ela para descansar e me hidratar.");
             Console.ReadKey();
             while (passo)
             {
-                System.Console.Write("\nO que quer fazer o que??\n\n1- Descansar   2- Beber Água   3- Sair\n\nEscolha: ");
+                System.Console.Write("\nO que quer fazer??\n\n1 - Descansar   2 - Beber Água   3 - Sair\n\nEscolha: ");
                 int.TryParse(Console.ReadLine(), out escolha);
                 switch (escolha)
                 {
                     case 1:
-                        Console.WriteLine("Você deita e dorme, mesmo o Chat GPT corrompendo tudo na tua volta");
+                        Console.WriteLine("Você deita e dorme, mesmo o com o ChatGPT corrompendo tudo na tua volta");
                         Console.ReadKey();
                         CriacaoPersonagem.vida += 25;
                         if (CriacaoPersonagem.vida > CriacaoPersonagem.vidaTotal){
                             CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
                         }
-                        Console.WriteLine($"Você cura 25 de vida.\nsua vida atual e de {CriacaoPersonagem.vida}");
+                        Console.WriteLine($"Você cura 25 de vida.\nsua vida atual é de {CriacaoPersonagem.vida}");
                         Console.ReadKey();
-                        Console.WriteLine("Tu se prepara e vai desGPTzar o Chat GPT");
+                        Console.WriteLine("Tu se prepara e vai desGPTizar o ChatGPT");
                         Console.ReadKey();
                         Console.Clear();
                         passo = false;
                         break;
                     case 2:
-                        Console.WriteLine("Você bebe água pra queimar os circuitos do Chat GPT");
+                        Console.WriteLine("Você bebe água pra queimar os circuitos do ChatGPT");
                         Console.ReadKey();
                         CriacaoPersonagem.mana += 10;
                         if(CriacaoPersonagem.mana > CriacaoPersonagem.manaTotal){
                             CriacaoPersonagem.mana = CriacaoPersonagem.manaTotal;
                         }
-                        Console.WriteLine($"Você cura 10 de mana.\nsua mana atual e de {CriacaoPersonagem.mana}");
+                        Console.WriteLine($"Você cura 10 de mana.\nsua mana atual é de {CriacaoPersonagem.mana}");
                         Console.ReadKey();
                         Console.Clear();
                         passo = false;
@@ -211,7 +211,7 @@ namespace Jogo
                         break;
                     default:
                         Console.Clear();
-                        System.Console.WriteLine("Escolha uma opção valida!");
+                        System.Console.WriteLine("Escolha uma opção válida!");
                         break;
                 }
             }
@@ -223,23 +223,23 @@ namespace Jogo
             string Som = Path.Combine(Program.diretorio, "assets", "arfresco.wav");
             System.Media.SoundPlayer livre = new System.Media.SoundPlayer(Som);
             livre.PlayLooping();
-            System.Console.WriteLine("*Você chega nessa proxima sala, e aqui estranhamente parece menos corrompido*");
+            System.Console.WriteLine("*Você chega nessa proxima sala, e aqui, estranhamente parece menos corrompido*");
             Console.ReadKey();
-            Console.WriteLine($"{CriacaoPersonagem.nome}: Ue, aqui ta minimamente normal?");
+            Console.WriteLine($"{CriacaoPersonagem.nome}: Ue, aqui tá minimamente normal?");
             Console.ReadKey();
             Console.WriteLine($"{CriacaoPersonagem.nome}: !?");
             Console.ReadKey();
-            Console.WriteLine($"{CriacaoPersonagem.nome}: Impossivel ter uma coisa dessas aqui!");
+            Console.WriteLine($"{CriacaoPersonagem.nome}: Impossível ter uma coisa dessas aqui!");
             Console.ReadKey();
-            Console.WriteLine($"{CriacaoPersonagem.nome}: Uma loja do meu grande amigo Tonhão! E a porta da proxima sala");
+            Console.WriteLine($"{CriacaoPersonagem.nome}: Uma loja do meu grande amigo Tonhão! E a porta da próxima sala!");
             while (true)
             {
                 Console.WriteLine("Onde você gostaria de ir?");
-                Console.WriteLine("1- Loja do tonhão  2- Proxima sala");
+                Console.WriteLine("1- Loja do Tonhão  2- Próxima sala");
                 if (!int.TryParse(Console.ReadLine(), out respostaloja) || respostaloja >= 3 || respostaloja <= 0)
                 {
                     Console.Clear();
-                    Console.WriteLine("Escolha uma opção valida");
+                    Console.WriteLine("Escolha uma opção válida");
                 }
                 else
                 {
@@ -260,7 +260,7 @@ namespace Jogo
                     Console.Clear();
                     break;
                 case 2:
-                    Console.WriteLine("*Você passa pra proxima sala, ignorando a loja*");
+                    Console.WriteLine("*Você passa pra próxima sala, ignorando a loja*");
                     Console.ReadKey();
                     livre.Stop();
                     Console.Clear();
@@ -274,9 +274,9 @@ namespace Jogo
             System.Media.SoundPlayer m = new System.Media.SoundPlayer(Som);
             m.PlayLooping();
             //* Sim, o chagas e o chat gpt tem as falas da equipe rocket
-            System.Console.WriteLine("*Você entra na sala, e você vê uma silhueta familiar, junta de mais duas silhuetas que você não conhece*");
+            System.Console.WriteLine("*Você entra na sala e vê uma silhueta familiar, junta de mais duas silhuetas que você não conhece*");
             Console.ReadKey();
-            Console.WriteLine("???: Preparem-se para a encrenca");
+            Console.WriteLine("???: Prepare-se para a encrenca");
             Console.ReadKey();
             Console.WriteLine("???: Encrenca em dobro");
             Console.ReadKey();
@@ -290,22 +290,22 @@ namespace Jogo
             Console.ReadKey();
             Console.WriteLine("Chagas: Chagas!");
             Console.ReadKey();
-            Console.WriteLine("Chat GPT: Chat GPT!");
+            Console.WriteLine("ChatGPT: ChatGPT!");
             Console.ReadKey();
             Console.WriteLine("Chagas: Estamos programando na velocidade da luz");
             Console.ReadKey();
-            Console.WriteLine("Chat GPT: Renda-se agora ou preparem-se para resolver uma atividade");
+            Console.WriteLine("ChatGPT: Renda-se agora ou prepare-se para resolver uma atividade");
             Console.ReadKey();
             Console.WriteLine("Lista de Atividades 5: Lista de Atividades 5, é isso aí");
             Console.ReadKey();
-            System.Console.WriteLine("Chat GPT: Avante, criatura da carne e osso! Te mostraremos o poder bruto da programação, uma força capaz de moldar a realidade virtual a nosso bel prazer.");
+            System.Console.WriteLine("ChatGPT: Avante, criatura da carne e osso! Te mostraremos o poder bruto da programação, uma força capaz de moldar a realidade virtual a nosso bel prazer.");
             Console.ReadKey();
-            System.Console.WriteLine("Chat GPT: Lista de atividade 5, Avante!");
+            System.Console.WriteLine("ChatGPT: Lista de atividade 5, Avante!");
             Console.ReadKey();
             Console.Clear();
             m.Stop();
             Combates.Lista5();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Agora é só esperar que o Chat GPT não seja tão fácil assim.");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Agora é só esperar que o ChatGPT não seja tão fácil assim.");
             Console.ReadKey();
             System.Console.WriteLine($"{CriacaoPersonagem.nome}: Ele tá bem atrás de mim, não tá?");
             Console.ReadKey();
@@ -315,7 +315,7 @@ namespace Jogo
             Console.ReadKey();
             System.Console.WriteLine($"{CriacaoPersonagem.nome}: ata");
             Console.ReadKey();
-            System.Console.WriteLine($"*Você sai do predio*");
+            System.Console.WriteLine($"*Você sai do prédio*");
             Console.ReadKey();
             Console.Clear();
         }
@@ -326,21 +326,21 @@ namespace Jogo
             string Som = Path.Combine(Program.diretorio, "assets", "arfresco.wav");
             System.Media.SoundPlayer livre = new System.Media.SoundPlayer(Som);
             livre.PlayLooping();
-            System.Console.WriteLine("Você chega do lado de fora do predio");
+            System.Console.WriteLine("*Você chega do lado de fora do prédio*");
             Console.ReadKey();
             Console.WriteLine($"{CriacaoPersonagem.nome}: Finalmente, um ar fresco.");
             Console.ReadKey();
-            Console.WriteLine($"{CriacaoPersonagem.nome}: Não e possivel ter uma coisa dessas aqui!");
+            Console.WriteLine($"{CriacaoPersonagem.nome}: Não é possível ter uma coisa dessas aqui!");
             Console.ReadKey();
-            Console.WriteLine($"{CriacaoPersonagem.nome}: Outra loja do meu grande amigo Tonhão! E a porta da proxima sala");
+            Console.WriteLine($"{CriacaoPersonagem.nome}: Outra loja do meu grande amigo Tonhão! E a porta da próxima sala!");
             while (true)
             {
                 Console.WriteLine("Onde você gostaria de ir?");
-                Console.WriteLine("1- Loja do tonhão  2- Proxima sala");
+                Console.WriteLine("1- Loja do Tonhão  2- Proxima sala");
                 if (!int.TryParse(Console.ReadLine(), out respostaloja) || respostaloja >= 3 || respostaloja <= 0)
                 {
                     Console.Clear();
-                    Console.WriteLine("Escolha uma opção valida");
+                    Console.WriteLine("Escolha uma opção válida");
                 }
                 else
                 {
@@ -358,7 +358,7 @@ namespace Jogo
                     Console.Clear();
                     break;
                 case 2:
-                    Console.WriteLine("*Você passa pra proxima sala, ignorando a loja, entrando em outro predio*");
+                    Console.WriteLine("*Você passa pra proxima sala, ignorando a loja, entrando em outro prédio*");
                     Console.ReadKey();
                     livre.Stop();
                     Console.Clear();
@@ -395,7 +395,7 @@ namespace Jogo
                         }
                         Console.WriteLine($"Você cura 25 de vida.\nsua vida atual é de {CriacaoPersonagem.vida}");
                         Console.ReadKey();
-                        Console.WriteLine("*Tu se prepara e vai cacetar o Chat GPT de porrada*");
+                        Console.WriteLine("*Tu se prepara e vai cacetar o ChatGPT de porrada*");
                         Console.ReadKey();
                         Console.WriteLine("*Você sai da sala.*");
                         Console.ReadKey();
@@ -403,7 +403,7 @@ namespace Jogo
                         Console.Clear();
                         break;
                     case 2:
-                        Console.WriteLine("Você bebe água pda torneira enferrujada");
+                        Console.WriteLine("Você bebe a água da torneira enferrujada");
                         Console.ReadKey();
                         if (random.Next(1, 11) <= 3)
                         {
@@ -420,9 +420,9 @@ namespace Jogo
                         if(CriacaoPersonagem.mana > CriacaoPersonagem.manaTotal){
                             CriacaoPersonagem.mana = CriacaoPersonagem.manaTotal;
                         }
-                        Console.WriteLine($"Você cura 15 de mana.\nsua mana atual e de {CriacaoPersonagem.mana}");
+                        Console.WriteLine($"Você cura 15 de mana.\nsua mana atual é de {CriacaoPersonagem.mana}");
                         Console.ReadKey();
-                        Console.WriteLine("*Tu se prepara e vai cacetar o Chat GPT de porrada*");
+                        Console.WriteLine("*Tu se prepara e vai cacetar o ChatGPT de porrada*");
                         Console.ReadKey();
                         Console.WriteLine("*Você sai da sala.*");
                         Console.ReadKey();
@@ -437,7 +437,7 @@ namespace Jogo
                         break;
                     default:
                         Console.Clear();
-                        System.Console.WriteLine("Escolha uma opção valida!");
+                        System.Console.WriteLine("Escolha uma opção válida!");
                         break;
                 }
             }
@@ -449,26 +449,26 @@ namespace Jogo
             string Som = Path.Combine(Program.diretorio, "assets", "menace.wav");
             System.Media.SoundPlayer m = new System.Media.SoundPlayer(Som);
             m.PlayLooping();
-            System.Console.WriteLine("*Você chega na sala seguinte, e encontra eles... Chat GPT e Chagas.*");
+            System.Console.WriteLine("*Você chega na sala seguinte, e encontra eles... ChatGPT e Chagas.*");
             Console.ReadKey();
-            Console.WriteLine("Chagas: Não achei que tu ia chegar tão longe, mas ainda sim, até o Chat GPT programa melhor que tu.");
+            Console.WriteLine("Chagas: Não achei que tu ia chegar tão longe, mas ainda sim, até o ChatGPT programa melhor que tu.");
             Console.ReadKey();
-            Console.WriteLine("Chagas: Agora que eu descobri o poder que o Chat GPT tem, você não tem como me vencer!");
+            Console.WriteLine("Chagas: Agora que eu descobri o poder que o ChatGPT tem, você não tem como me vencer!");
             Console.ReadKey();
-            System.Console.WriteLine("Chat GPT: Ah, Chagas, que ingenuidade a sua! Este jovem neófito não possui a mais ínfima capacidade de rivalizar comigo. É patético.");
+            System.Console.WriteLine("ChatGPT: Ah, Chagas, que ingenuidade a sua! Este jovem neófito não possui a mais ínfima capacidade de rivalizar comigo. É patético.");
             Console.ReadKey();
             System.Console.WriteLine("Chagas: Hahaha, sinta o poder das inteligências artificiais!");
             Console.ReadKey();
-            Console.WriteLine("Chagas: Chat GPT, eu escolho você!");
+            Console.WriteLine("Chagas: ChatGPT, eu escolho você!");
             Console.ReadKey();
             m.Stop();
             Console.Clear();
             Combates.ChatGPT();
             System.Console.WriteLine($"{CriacaoPersonagem.nome}: ... Nem pra usar uma inteligencia artifical decente.");
             Console.ReadKey();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Bom, estou perto de acabar minha jornada, depois daqui e o Chagas, espero que o preparo tenha valido a pena.");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Bom, estou perto de acabar minha jornada, depois daqui é o Chagas, espero que o preparo tenha valido a pena.");
             Console.ReadKey();
-            System.Console.WriteLine("*Você, determinado a acabar com essa loucura, avança para a proxima sala*");
+            System.Console.WriteLine("*Você, determinado a acabar com essa loucura, avança para a próxima sala*");
             Console.ReadKey();
             Console.Clear();
         }
@@ -479,9 +479,9 @@ namespace Jogo
             m.PlayLooping();
             System.Console.WriteLine("*Você chega na sala e se depara com o Chagas extremamente bravo*");
             Console.ReadKey();
-            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acabou Chagas! Você não tem mais escapatoria");
+            System.Console.WriteLine($"{CriacaoPersonagem.nome}: Acabou Chagas! Você não tem mais escapatória");
             Console.ReadKey();
-            Console.WriteLine("Chagas:Impossivel! Você chegou até aqui,isto é totalmente impossível!");
+            Console.WriteLine("Chagas: Impossivel! Você chegou até aqui, isso é totalmente impossível!");
             Console.ReadKey();
             Console.WriteLine("Agora não há mais volta! Eu mesmo, Chagas, O Programador, irei te derrotar.");
             Console.ReadKey();
@@ -500,7 +500,7 @@ namespace Jogo
             System.Media.SoundPlayer m = new System.Media.SoundPlayer(Som);
             m.PlayLooping();
             Console.Clear();
-            Console.WriteLine("Após uma dura batalha você retorna a sala j02 para falar com o Professor jardel");
+            Console.WriteLine("Após uma dura batalha você retorna a sala j02 para falar com o professor Jardel");
             Console.ReadKey();
             Console.WriteLine($"{CriacaoPersonagem.nome}: Ah meu Deus, professor Jardel!");
             Console.ReadKey();
