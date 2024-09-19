@@ -41,7 +41,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -87,7 +87,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -133,7 +133,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -179,7 +179,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -225,7 +225,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -271,7 +271,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -317,7 +317,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -363,7 +363,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -409,7 +409,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -455,7 +455,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -500,7 +500,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -546,7 +546,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -592,7 +592,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -638,7 +638,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -683,7 +683,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
@@ -728,7 +728,7 @@ namespace Jogo
                 else
                 {
                     Combates.dano = random.Next(1, 11);
-                    Console.Write($"Tu não corrigiu os código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
+                    Console.Write($"Tu não corrigiu o código e o Chagas deu esporro, tu tomou {Combates.dano} de dano");
                     Console.ReadLine();
                     CriacaoPersonagem.vida -= Combates.dano;
                     break;
