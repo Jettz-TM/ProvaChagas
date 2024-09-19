@@ -206,7 +206,7 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 5)
                                     {
                                         CriacaoPersonagem.mana -= 5;
-                                        System.Console.WriteLine("Você joga um robô entre você e o inimígo e evita o dano nesse turno");
+                                        System.Console.WriteLine("Você joga um robô entre você e o inimigo e evita o dano nesse turno");
                                         bloqueio = true;
                                         menu = 4;
                                     }
@@ -313,7 +313,7 @@ namespace Jogo
                         if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
                         {
                             Console.Clear();
-                            System.Console.WriteLine("Escolha uma opção valida");
+                            System.Console.WriteLine("Escolha uma opção válida");
                         }
                         else if (Inventario.linha == 0)
                         {
@@ -358,7 +358,7 @@ namespace Jogo
                     }
                     else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
                     }
                 }
             }
@@ -484,7 +484,7 @@ namespace Jogo
                                     if (CriacaoPersonagem.mana >= 5)
                                     {
                                         CriacaoPersonagem.mana -= 5;
-                                        System.Console.WriteLine("Você joga um robô entre você e o inimígo e evita o dano nesse turno");
+                                        System.Console.WriteLine("Você joga um robô entre você e o inimigo e evita o dano nesse turno");
                                         bloqueio = true;
                                         menu = 4;
                                     }
@@ -591,7 +591,7 @@ namespace Jogo
                         if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
                         {
                             Console.Clear();
-                            System.Console.WriteLine("Escolha uma opção valida");
+                            System.Console.WriteLine("Escolha uma opção válida");
                         }
                         else if (Inventario.linha == 0)
                         {
@@ -642,7 +642,7 @@ namespace Jogo
                     }
                     else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
                     }
                 }
             }
@@ -876,7 +876,7 @@ namespace Jogo
                         if (!int.TryParse(Console.ReadLine(), out Inventario.linha) || Inventario.linha > 9 || Inventario.linha <= -1)
                         {
                             Console.Clear();
-                            System.Console.WriteLine("Escolha uma opção valida");
+                            System.Console.WriteLine("Escolha uma opção válida");
                         }
                         else if (Inventario.linha == 0)
                         {
@@ -927,7 +927,7 @@ namespace Jogo
                     }
                     else if (escolhainimigo == 1)
                     {
-                        System.Console.WriteLine("O inimigo de protegeu e não tomou dano nesse turno");
+                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
                     }
                 }
             }
