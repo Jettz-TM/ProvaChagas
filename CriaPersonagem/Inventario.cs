@@ -59,18 +59,18 @@ namespace Jogo
             {
                 ShowInv(matrizinv); // * Mostra o inventario
 
-                System.Console.WriteLine("Digite o numero da Linha onde deseja adicionar seu item");
+                System.Console.WriteLine("Digite o numero da linha onde deseja adicionar seu item");
                 // * Acesso da Linha
 
                 if (!int.TryParse(Console.ReadLine(), out linha) || linha - 1 > 8 || linha - 1 < 0)
                 {
                     Console.Clear();
-                    System.Console.WriteLine("Escolha um slot valido");
+                    System.Console.WriteLine("Escolha um slot válido");
                 }
                 else if (matrizinv[linha - 1, 0] != null)
                 {
                     Console.Clear();
-                    System.Console.WriteLine("Ja existe algo nesse slot, favor escolher outro slot");
+                    System.Console.WriteLine("Já existe algo nesse slot, por favor escolha outro slot");
                 }
                 else
                 {
