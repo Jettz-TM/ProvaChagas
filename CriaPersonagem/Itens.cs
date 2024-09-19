@@ -11,7 +11,7 @@ namespace Jogo
             else if(matrizinv[linha - 1 , 0] == "Salgado"){
                 Salgado(Program.matrizinv, Combates.pode);
             }
-            else if(matrizinv[linha - 1, 0] == "Energetico"){
+            else if(matrizinv[linha - 1, 0] == "Energético"){
                 Energetico(Program.matrizinv, Combates.pode);
             }
             else if(matrizinv[linha - 1, 0] == "Soco Inglês"){
@@ -69,7 +69,7 @@ namespace Jogo
                 if(chanceMorte <= 3){
                     CriacaoPersonagem.vida -= dano;
                     System.Console.WriteLine("?!");
-                    Console.WriteLine($"Você sente um aperto no coração, voce perde {dano} pontos de vida");
+                    Console.WriteLine($"Você sente um aperto no coração, você perde {dano} pontos de vida");
                     atkCardiaco++;
                 }
                 Program.matrizinv[Inventario.linha -1, 0] = null;
@@ -77,7 +77,7 @@ namespace Jogo
             }
         }
         public static void ItemPassivo(){
-            System.Console.WriteLine("Esse item ja e equipado passivamente");
+            System.Console.WriteLine("Esse item jé é equipado passivamente");
         }
         public static void Sorvete(string?[,] matrizinv, bool pode)
         {
@@ -85,7 +85,7 @@ namespace Jogo
             int energetico = 10;
 
             if(CriacaoPersonagem.vida == CriacaoPersonagem.vidaTotal && CriacaoPersonagem.mana == CriacaoPersonagem.manaTotal){
-                Console.WriteLine("Tua vida e mana estão cheias, cerebro vencido");
+                Console.WriteLine("Tua vida e mana estão cheias, cérebro vencido");
             }
             else if (CriacaoPersonagem.vida < CriacaoPersonagem.vidaTotal && CriacaoPersonagem.mana < CriacaoPersonagem.manaTotal)
             {
