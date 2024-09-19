@@ -48,13 +48,14 @@ namespace Jogo
                             Console.WriteLine("Salas: Maurício e Wagner");
                             Console.WriteLine("Inventário: Maurício e Wagner");
                             Console.WriteLine("Combates: Gustavo e Roney");
+                            Console.WriteLine("Loja: Roney");
                             Console.WriteLine("Itens: Wagner");
                             Console.WriteLine("Roteiro: Todos");
                             Console.WriteLine("\nNiord como: Chagas");
                             Console.WriteLine("Jardel como: Jardel");
                             Console.WriteLine("Gemini como: Chat GPT");
                             Console.WriteLine("Renê como: Reninho");
-                            Console.WriteLine("Menção Honrosa: Oto Ribeiro Serafim \n Ele nos ajudou com metodos mais praticos para programar o jogo \n Valeu Oto <3");
+                            Console.WriteLine("Menção Honrosa: Oto Ribeiro Serafim \n Ele nos ajudou com metodos mais práticos para programar o jogo \n Valeu Oto <3");
                             Console.WriteLine("\n\nAperte qualquer coisa para sair.");
                             Console.ReadKey();
                             break;
