@@ -18,11 +18,11 @@ namespace Jogo
                 while (true)
                 {
                     Console.Clear();
-                    System.Console.WriteLine("Bem-vindo a loja do Tonhão: onde meu lucro é a sua decepção! \nEscolha uma ação:\n1 - comprar\n2 - sair");
+                    System.Console.WriteLine("Bem-vindo a loja do Tonhão: onde meu lucro é a sua decepção! \nEscolha uma ação:\n1 - Comprar\n2 - Sair");
                     if (!int.TryParse(System.Console.ReadLine(), out escolha1) || escolha1 < 1 || escolha1 > 2)
                     {
                         Console.Clear();
-                        System.Console.WriteLine("Digite um valor valido");
+                        System.Console.WriteLine("Digite um valor válido");
                     }
                     else
                     {
@@ -43,7 +43,7 @@ namespace Jogo
                             if (!int.TryParse(System.Console.ReadLine(), out escolha2) || escolha2 < 0 || escolha2 > 3)
                             {
                                 Console.Clear();
-                                System.Console.WriteLine("Digite um valor valido!");
+                                System.Console.WriteLine("Digite um valor válido!");
                             }
                             else
                             {
@@ -83,7 +83,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
@@ -114,7 +114,7 @@ namespace Jogo
                                         System.Console.WriteLine("Que seja útil na sua jornada.");
                                         stock[1] = stock[1] - 1;
                                         CriacaoPersonagem.dinheiro = CriacaoPersonagem.dinheiro - preco;
-                                        item = "Energetico";
+                                        item = "Energético";
                                         Inventario.ChangeInv(Program.matrizinv, item);
                                         Inventario.ShowInv(Program.matrizinv);
                                         Console.ReadKey();
@@ -124,7 +124,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
@@ -166,7 +166,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
@@ -184,11 +184,11 @@ namespace Jogo
                 }
                 else if (escolha1 == 2)
                 {
-                    System.Console.WriteLine("Ja vai embora?");
+                    System.Console.WriteLine("Já vai embora?");
                     break;
                 }
             }
-            System.Console.WriteLine("Volte mais tarde! (com mais grana e claro se não nem volta)");
+            System.Console.WriteLine("Volte mais tarde! (com mais grana é claro, se não nem volta)");
             Console.ReadKey();
             tonhao.Stop();
         }
@@ -208,7 +208,7 @@ namespace Jogo
                     if (!int.TryParse(System.Console.ReadLine(), out escolha1) || escolha1 < 1 || escolha1 > 2)
                     {
                         Console.Clear();
-                        System.Console.WriteLine("Digite um valor valido");
+                        System.Console.WriteLine("Digite um valor válido");
                     }
                     else
                     {
@@ -229,7 +229,7 @@ namespace Jogo
                             if (!int.TryParse(System.Console.ReadLine(), out escolha2) || escolha2 < 0 || escolha2 > 3)
                             {
                                 Console.Clear();
-                                System.Console.WriteLine("Digite um valor valido!");
+                                System.Console.WriteLine("Digite um valor válido!");
                             }
                             else
                             {
@@ -269,7 +269,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
@@ -300,7 +300,7 @@ namespace Jogo
                                         System.Console.WriteLine("Que seja útil na sua jornada.");
                                         stock[1] = stock[1] - 1;
                                         CriacaoPersonagem.dinheiro = CriacaoPersonagem.dinheiro - preco;
-                                        item = "Energetico";
+                                        item = "Energético";
                                         Inventario.ChangeInv(Program.matrizinv, item);
                                         Inventario.ShowInv(Program.matrizinv);
                                         Console.ReadKey();
@@ -310,7 +310,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
@@ -351,7 +351,7 @@ namespace Jogo
                                 else
                                 {
                                     Console.Clear();
-                                    System.Console.WriteLine("Tonhão: Desculpe, o estoque acabou.");
+                                    System.Console.WriteLine("Tonhão: Desculpa, o estoque acabou.");
                                 }
                             }
                             else
