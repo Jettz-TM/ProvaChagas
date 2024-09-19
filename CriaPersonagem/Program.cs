@@ -57,7 +57,8 @@ namespace Jogo
             Salas.Sala6();
             Salas.Sala7();
             Salas.Sala8();
-            Console.ReadKey();
+            Salas.Sala9();
+            Salas.Final();
 
             // * combate contra o chat gpt e a loja do tonhão em comentario pq ainda não tão 100%
             // * ou a parte em que els entram ainda não foi terminada

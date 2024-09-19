@@ -3,6 +3,7 @@ namespace Jogo
 {
     class Itens
     {
+        public static int atkCardiaco;
         public static void Acess(string?[,] matrizinv, int linha){
             if (matrizinv[linha - 1, 0] == null){
                 System.Console.WriteLine("Não existe nada aqui");
@@ -22,7 +23,6 @@ namespace Jogo
             else if(matrizinv[linha - 1, 0] == "Sorvete de Chocolate"){
                 Sorvete(Program.matrizinv, Combates.pode);
             }
-            
             
         }
         public static void Salgado(string?[,] matrizinv, bool pode)
@@ -70,6 +70,7 @@ namespace Jogo
                     CriacaoPersonagem.vida -= dano;
                     System.Console.WriteLine("?!");
                     Console.WriteLine($"Você sente um aperto no coração, voce perde {dano} pontos de vida");
+                    atkCardiaco++;
                 }
                 Program.matrizinv[Inventario.linha -1, 0] = null;
                 Combates.pode = false;

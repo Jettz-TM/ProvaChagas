@@ -10,7 +10,6 @@ namespace Jogo
         public static void ChatGPT()
         {
             morreu = 0;
-            CriacaoPersonagem.vida = CriacaoPersonagem.vidaTotal;
 
             string Som = Path.Combine(Program.diretorio, "assets", "caos.wav");
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(Som);
@@ -135,11 +134,11 @@ namespace Jogo
             int vidaTotalInimigo = 50;
             Random random = new Random();
             bool bloqueio = false;
-            int dant = 0;
 
 
             while (CriacaoPersonagem.vida > 0 && vidaTotalInimigo > 0)
             {
+                int dant = 0;
                 if (CriacaoPersonagem.vida <= 0)
                 {
                     break;
@@ -413,11 +412,11 @@ namespace Jogo
             int vidaTotalInimigo = 80;
             Random random = new Random();
             bool bloqueio = false;
-            int dant = 0;
 
 
             while (CriacaoPersonagem.vida > 0 && vidaTotalInimigo > 0)
             {
+                int dant = 0;
                 if (CriacaoPersonagem.vida <= 0)
                 {
                     break;
@@ -698,17 +697,17 @@ namespace Jogo
             int vidaTotalInimigo = 160;
             Random random = new Random();
             bool bloqueio = false;
-            int dant = 0;
 
 
             while (CriacaoPersonagem.vida > 0 && vidaTotalInimigo > 0)
             {
+                int dant = 0;
                 if (CriacaoPersonagem.vida <= 0)
                 {
                     break;
                 }
-                int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma, ataqueinimigo = random.Next(1, 19);
-                ataqueinimigo = random.Next(5, 26);
+                int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma,
+                ataqueinimigo = random.Next(5, 21);
                 int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {

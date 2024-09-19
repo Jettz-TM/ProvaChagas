@@ -7,6 +7,9 @@ namespace Jogo
         {
             int escolha;
             bool passa = true;
+            string Som = Path.Combine(Program.diretorio, "assets", "start.wav");
+            System.Media.SoundPlayer m = new System.Media.SoundPlayer(Som);
+            m.Play();
             while (passa)
             {
                 Console.Clear();
