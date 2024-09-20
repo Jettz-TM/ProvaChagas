@@ -88,9 +88,9 @@ namespace Jogo
             {
                 Console.ForegroundColor = System.ConsoleColor.Green;
                 Random random = new Random();
-                int gambler = random.Next(1, 5);
-                int gambler2 = random.Next(1, 5);
-                int gambler3 = random.Next(1, 5);
+                int gambler = random.Next(1, 4);
+                int gambler2 = random.Next(1, 4);
+                int gambler3 = random.Next(1, 4);
                 System.Console.WriteLine("Você aposta R$3, se conseguir ganhar, sua grana dobra, se perder, bom, apostas né? rsrs");
                 Console.WriteLine($"Número de Vitórias: {wins}");
                 Console.WriteLine($"Número de Derrotas: {loses}");
@@ -113,6 +113,7 @@ namespace Jogo
                         Thread.Sleep(500);
                         Console.WriteLine("Jackpot!!!!");
                         Thread.Sleep(1000);
+                        CriacaoPersonagem.dinheiro = CriacaoPersonagem.dinheiro + 3;
                         CriacaoPersonagem.dinheiro = CriacaoPersonagem.dinheiro * 2;
                         wins++;
                         Console.Clear();

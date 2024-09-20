@@ -114,7 +114,7 @@ namespace Jogo
             else
             {
                 Console.Clear();
-                CriacaoPersonagem.dinheiro +=  addDinheiro = random.Next(5, 16);
+                CriacaoPersonagem.dinheiro += addDinheiro = random.Next(5, 16);
                 Console.WriteLine($"Parabéns {CriacaoPersonagem.nome}, você ganhou do Chat GPT!");
                 Console.ReadKey();
                 Console.WriteLine($"Você ganhou {addDinheiro} de dinheiro!");
@@ -132,6 +132,7 @@ namespace Jogo
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
             int vidaTotalInimigo = 50;
+            int defesa;
             Random random = new Random();
             bool bloqueio = false;
 
@@ -143,8 +144,8 @@ namespace Jogo
                 {
                     break;
                 }
-                int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma, ataqueinimigo = random.Next(1, 19);
-                ataqueinimigo = random.Next(5, 26);
+                int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma,
+                ataqueinimigo = random.Next(5, 21);
                 int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {
@@ -328,8 +329,8 @@ namespace Jogo
                         }
                     }
                 }
-                int escolhainimigo = random.Next(0, 2);
-                if (escolhainimigo == 0)
+                int escolhainimigo = random.Next(1, 11);
+                if (escolhainimigo <= 7)
                 {
                     if (dant == 1)
                     {
@@ -344,7 +345,7 @@ namespace Jogo
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
 
-                    if (escolhainimigo == 0)
+                    if (escolhainimigo <= 8)
                     {
                         if (bloqueio == false)
                         {
@@ -356,9 +357,18 @@ namespace Jogo
                             System.Console.WriteLine($"O inimigo tentou atacar mas falhou :(");
                         }
                     }
-                    else if (escolhainimigo == 1)
+                    else if (escolhainimigo >= 9)
                     {
-                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
+                        defesa = random.Next(0, 101);
+                        vidaTotalInimigo -= (danoMurro + CriacaoPersonagem.forca) * (defesa / 100);
+                        if (defesa == 0)
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e negou o dano que tomou nesse turno.");
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e diminuiu o dano que tomou nesse turno.");
+                        }
                     }
                 }
             }
@@ -406,12 +416,13 @@ namespace Jogo
 
         public static void Lista5()
         {
-            string gen1 = Path.Combine(Program.diretorio, "assets", "generico.wav");
+            string gen1 = Path.Combine(Program.diretorio, "assets", "lista.wav");
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
             int vidaTotalInimigo = 80;
             Random random = new Random();
             bool bloqueio = false;
+            int defesa;
 
 
             while (CriacaoPersonagem.vida > 0 && vidaTotalInimigo > 0)
@@ -606,8 +617,8 @@ namespace Jogo
                         }
                     }
                 }
-                int escolhainimigo = random.Next(0, 2);
-                if (escolhainimigo == 0)
+                int escolhainimigo = random.Next(1, 11);
+                if (escolhainimigo <= 8)
                 {
                     if (dant == 1)
                     {
@@ -622,14 +633,16 @@ namespace Jogo
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
 
-                    if (escolhainimigo == 0)
+                    if (escolhainimigo <= 8)
                     {
                         if (bloqueio == false)
                         {
-                            if(ataqueinimigo < CriacaoPersonagem.buffArmadura){
+                            if (ataqueinimigo < CriacaoPersonagem.buffArmadura)
+                            {
                                 System.Console.WriteLine($"O inimigo atacou e deu 0 de dano!");
                             }
-                            else{
+                            else
+                            {
                                 System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo - CriacaoPersonagem.buffArmadura} de dano!");
                                 CriacaoPersonagem.vida -= ataqueinimigo - CriacaoPersonagem.buffArmadura;
 
@@ -640,9 +653,18 @@ namespace Jogo
                             System.Console.WriteLine($"O inimigo tentou atacar mas falhou :(");
                         }
                     }
-                    else if (escolhainimigo == 1)
+                    else if (escolhainimigo >= 9)
                     {
-                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
+                        defesa = random.Next(0, 101);
+                        vidaTotalInimigo -= (danoMurro + CriacaoPersonagem.forca) * (defesa / 100);
+                        if (defesa == 0)
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e negou o dano que tomou nesse turno.");
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e diminuiu o dano que tomou nesse turno.");
+                        }
                     }
                 }
             }
@@ -691,12 +713,13 @@ namespace Jogo
 
         public static void Chagas()
         {
-            string gen1 = Path.Combine(Program.diretorio, "assets", "generico.wav");
+            string gen1 = Path.Combine(Program.diretorio, "assets", "chagas.wav");
             System.Media.SoundPlayer gen = new System.Media.SoundPlayer(gen1);
             gen.PlayLooping();
             int vidaTotalInimigo = 160;
             Random random = new Random();
             bool bloqueio = false;
+            int defesa;
 
 
             while (CriacaoPersonagem.vida > 0 && vidaTotalInimigo > 0)
@@ -707,7 +730,7 @@ namespace Jogo
                     break;
                 }
                 int danoPlayer = random.Next(5, 21), danoMurro = random.Next(1, 11) + CriacaoPersonagem.buffArma,
-                ataqueinimigo = random.Next(5, 21);
+                ataqueinimigo = random.Next(5, 26);
                 int menu = 0, escolha, escolhaluta;
                 if (menu == 0)
                 {
@@ -891,8 +914,8 @@ namespace Jogo
                         }
                     }
                 }
-                int escolhainimigo = random.Next(0, 2);
-                if (escolhainimigo == 0)
+                int escolhainimigo = random.Next(0, 11);
+                if (escolhainimigo <= 8)
                 {
                     if (dant == 1)
                     {
@@ -907,14 +930,16 @@ namespace Jogo
                 {
                     System.Console.WriteLine("--- Turno do inimigo ---");
 
-                    if (escolhainimigo == 0)
+                    if (escolhainimigo <= 8)
                     {
                         if (bloqueio == false)
                         {
-                            if(ataqueinimigo < CriacaoPersonagem.buffArmadura){
+                            if (ataqueinimigo < CriacaoPersonagem.buffArmadura)
+                            {
                                 System.Console.WriteLine($"O inimigo atacou e deu 0 de dano!");
                             }
-                            else{
+                            else
+                            {
                                 System.Console.WriteLine($"O inimigo atacou e deu {ataqueinimigo - CriacaoPersonagem.buffArmadura} de dano!");
                                 CriacaoPersonagem.vida -= ataqueinimigo - CriacaoPersonagem.buffArmadura;
 
@@ -925,9 +950,27 @@ namespace Jogo
                             System.Console.WriteLine($"O inimigo tentou atacar mas falhou :(");
                         }
                     }
-                    else if (escolhainimigo == 1)
+                    else if (escolhainimigo >= 9)
                     {
-                        System.Console.WriteLine("O inimigo se protegeu e não tomou dano nesse turno");
+                        defesa = random.Next(0, 101);
+                        vidaTotalInimigo -= (danoMurro + CriacaoPersonagem.forca) * (defesa / 100);
+                        if (defesa == 0)
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e negou o dano que tomou nesse turno.");
+                        }
+                        else if (escolhainimigo >= 9)
+                    {
+                        defesa = random.Next(0, 101);
+                        vidaTotalInimigo -= (danoMurro + CriacaoPersonagem.forca) * (defesa / 100);
+                        if (defesa == 0)
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e negou o dano que tomou nesse turno.");
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("O inimigo se protegeu e diminuiu o dano que tomou nesse turno.");
+                        }
+                    }
                     }
                 }
             }
