@@ -51,11 +51,10 @@ namespace Jogo
                             Console.WriteLine("Loja: Roney");
                             Console.WriteLine("Itens: Wagner");
                             Console.WriteLine("Roteiro: Todos");
-                            Console.WriteLine("\nNiord como: Chagas");
                             Console.WriteLine("Jardel como: Jardel");
                             Console.WriteLine("Gemini como: Chat GPT");
-                            Console.WriteLine("Renê como: Reninho");
-                            Console.WriteLine("Menção Honrosa: Oto Ribeiro Serafim \n Ele nos ajudou com metodos mais práticos para programar o jogo \n Valeu Oto <3");
+                            Console.WriteLine("Renê como: Reninho BetaTester");
+                            Console.WriteLine("Menção Honrosa: Oto Ribeiro Serafim \nEle nos ajudou com metodos mais práticos para programar o jogo \nValeu Oto <3");
                             Console.WriteLine("\n\nAperte qualquer coisa para sair.");
                             Console.ReadKey();
                             break;
